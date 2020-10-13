@@ -1,0 +1,145 @@
+{% extends 'adminbase.html' %}
+
+
+{% block active2 %}active{% endblock active2 %}
+
+{% block content %}
+
+<!--Main layout-->
+<main class="pt-5 mx-lg-5">
+    <div class="container-fluid mt-5">
+
+        <!-- Heading -->
+        <div class="card mb-4 wow fadeIn">
+
+            <!--Card content-->
+            <div class="card-body d-sm-flex justify-content-between">
+
+                <h4 class="mb-2 mb-sm-0 pt-1">
+                    <span>List Of Students</span>
+                </h4>
+
+                <form class="d-flex justify-content-center" action="" method="POST" id="search-form">
+                    {% csrf_token %}
+                    <input type="text" id="search" name='search' placeholder="Type your query" aria-label="Search" class="form-control">
+                    <button class="btn btn-primary btn-sm my-0 p" id="abc">
+                    <i class="fas fa-search"></i>
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+        <!-- Heading -->
+
+        {% if messages %}
+          {% for message in messages %}
+              <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                  {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+          {% endfor %}
+        {% endif %}
+
+        <div class="row">
+            <div class="col">
+                <table id="dtBasicExample" class="table table-hover" width="100%">
+                    <thead class="info-color">
+                      <tr>
+                        <th class="th-md">#
+                        </th>
+                        <th class="th-sm">Name
+                        </th>
+                        <th class="th-sm">Current Class
+                        </th>
+                        <th>Actions
+                        </th>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody id="student-table">
+                        {% for student in students %}
+                        <tr>
+                            <th scope="row">{{ forloop.counter }}</th>
+                            <td>
+                                <img width="40px" src="{{ student.profile.image.url }}" class="rounded-circle z-depth-0 mr-3" alt="avatar image">
+                                <b>{{ student.profile.first_name }} {{ student.profile.last_name }}</b>
+                            </td>
+                            <td>{{ student.current_class }}</td>
+                            <td><a href="{% url 'core:student-detail-admin' student.profile.user.username %}" class="btn btn-primary btn-sm">View Details</a></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th>#
+                        </th>
+                        <th>Name
+                        </th>
+                        <th>Current Class
+                        </th>
+                        <th>Actions
+                        </th>
+                      </tr>
+                    </tfoot>
+                  </table>
+            </div>
+        </div>
+
+    </div>
+</main>
+<!--Main layout-->
+
+{% endblock content %}
+
+
+
+
+{% block extra_body %}
+<script>
+// Basic example
+$(document).ready(function () {
+
+  
+  $('#dtBasicExample').DataTable({
+    "pagingType": "full_numbers" // "simple" option for 'Previous' and 'Next' buttons only
+  });
+  $('.dataTables_length').addClass('bs-select');
+
+  
+  // $('#search-form').submit(function(e){
+  //     e.preventDefault();
+
+      function x(){
+        const search = $('#search').val();
+      
+
+        const url = $('#search-form').attr('action')
+
+        $.ajax({
+          type: 'POST',
+          url: 'http://127.0.0.1:8000/admin-portal/students/',
+          data: {
+            'csrfmiddlewaretoken': $('input[name=csrfmiddlewaretoken]').val(),
+            'search': search,
+          },
+          success: function(html) {
+            console.log(html)
+            $('#student-table', html).replaceAll('#student-table')
+          },
+          error: function (error) {
+            console.log('error', error)
+          }
+        })
+
+      }
+
+      setInterval(x, 1000)
+      
+
+    // })
+});
+</script>
+{% endblock extra_body %}
