@@ -11,15 +11,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: source ~/.nvm/nvm.sh
+      
+      - run: npm install -g gatsby-cli
+      - run: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
       - run: nvm install node
       - run: npm install -g yarn
       - run: yarn
-      - run: npm install -g gatsby-cli
+      
       - run: yarn install
       - run: nvm install
       - run: npm install
-      - run: yarn
       - run: npm start
       
   publish:
