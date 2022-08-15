@@ -1,0 +1,24 @@
+name: pages-build-deployment
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install -g gatsby-cli
+      - run: nvm install
+      - run: yarn
+      - run: npm start
+      
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm run build
+      - run: npm run serve
