@@ -20,6 +20,7 @@ jobs:
       - run: nvm install
 #       - run: sh install_nvm.sh
 #       - run: sudo apt-get install npm
+      - run: nvm install v16.15.1
       - run: yarn
       - run: npm start
       
