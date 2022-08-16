@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pwd
-      - run: cd -
+      - run: cd /
       - run: pwd
       - run: npm run build
       - run: pwd
