@@ -15,6 +15,7 @@ jobs:
 #       - uses: actions/jekyll-build-pages@v1.0.5
 #       - uses: actions/deploy-pages@v1.0.8
       - run: sh install_nvm.sh
+      - run: sudo apt-get install npm
       - run: nvm install
       - run: npm install -g gatsby-cli
       - run: yarn
