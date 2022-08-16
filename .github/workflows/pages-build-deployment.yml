@@ -16,10 +16,9 @@ jobs:
       - run: echo -n 'nvm "$@" && echo $NVM_BIN >> $GITHUB_PATH' >>  ~/.nvm/nvm.sh
       - run: sudo cp ~/.nvm/nvm.sh /usr/local/bin/nvm
       - run: sudo chmod +x /usr/local/bin/nvm
-      - run: sh install_nvm.sh
-      - run: sudo apt-get install npm
-      - run: npm install -g gatsby-cli
       - run: nvm install
+#       - run: sh install_nvm.sh
+      - run: sudo apt-get install npm
       - run: npm install -g gatsby-cli
       - run: yarn
       - run: npm start
