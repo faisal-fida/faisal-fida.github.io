@@ -35,7 +35,7 @@ export const Hero = () => {
 							mx={5}>
 							Faisal Fida.
 							<br />
-							<chakra.span color="gray.200">Tired of working with companies and agencies?</chakra.span>
+							<chakra.span color="gray.100">Tired of working with agencies?</chakra.span>
 						</Text>
 					</Box>
 					<Text
@@ -44,7 +44,7 @@ export const Hero = () => {
 						my={['25px', '30px', '45px']}
 						maxWidth={['sm', 'md', 'lg']}
 						className="fade delay8">
-						We are a revolutionary agency that provides quality service and lightning-fast delivery at an affordable price. Using all aspects of technology, we create inspiring and creative projects.
+						Young, dynamic, and innovative, I provide quality service and lightning fast delivery at an affordable price. The projects I create are innovative and creative, utilizing all facets of technology.
 					</Text>
 					<NextLink href="#contact" passHref>
 						<Button
@@ -60,7 +60,7 @@ export const Hero = () => {
 								textDecoration: 'none',
 							}}
 							className="fade delay9">
-							Get in touch
+							SEE PLANS
 						</Button>
 					</NextLink>
 				</Box>
