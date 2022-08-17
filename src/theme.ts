@@ -19,7 +19,7 @@ const styles = {
 		},
 		'*': {
 			scrollbarWidth: 'thin',
-			scrollbarColor: '#A2A2A2 #252525',
+			scrollbarColor: '#A2A2A2 #0A192F',
 		},
 		'*::-webkit-scrollbar': {
 			width: '8px',
@@ -61,14 +61,14 @@ const components = {
 
 const colors = {
 	gray: {
-		200: '#AFAFAF',
-		800: '#353535',
-		900: '#252525',
+		200: '#000000',
+		800: '#0A192F',
+		900: '#000000',
 	},
 	teal: {
-		100: '#6cccfc',
-		200: '#4fbdfc',
-		300: '#44b4fc',
+		100: '#6BB5F8',
+		200: '#B86BF8',
+		300: '#FA61F9',
 	},
 };
 
