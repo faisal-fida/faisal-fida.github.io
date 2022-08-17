@@ -17,9 +17,9 @@ export const Work = () => {
 				title="Hypixel Guild Chat Bot"
 				description="A simple yet modern Discord bot that allows you to bridge between Hypixel guild chat and Discord chat. Made with Discord.js and Mineflayer."
 				imagePath="/projects/hgcb.png"
-				tech={['JavaScript', 'Node.js']}
-				github="https://github.com/xMdb/hypixel-guild-chat-bot"
-				url="https://github.com/xMdb/hypixel-guild-chat-bot#features"
+				tech={['Python', 'Django', 'Flask']}
+				github="https://github.com/faisal-fida/hypixel-guild-chat-bot"
+				url=""
 			/>
 			<Project
 				id={1}
@@ -27,8 +27,8 @@ export const Work = () => {
 				description="A website for a fake programming language that I came up with. It doesn't exist. I designed the UI in in Figma and brought it to the web using TailwindCSS."
 				imagePath="/projects/craft.jpg"
 				tech={['HTML', 'Tailwind CSS', 'Node.js']}
-				github="https://github.com/xMdb/craft"
-				url="https://craft-mockup.netlify.app"
+				github="https://github.com/faisal-fida/craft"
+				url=""
 				inverse={true}
 			/>
 			<Project
@@ -37,8 +37,8 @@ export const Work = () => {
 				description="My IaC (Infrasructure as Code) project. This is my Ansible playbook that I use to automatically provision settings and applications on my Raspberry Pi 4 using Ubuntu Server 20.04. This keeps it idempotent and reproducible if anything goes wrong (Murphy's Law)."
 				imagePath="/projects/struct.png"
 				tech={['Ansible', 'Docker', 'YAML']}
-				github="https://github.com/xMdb/struct"
-				url="https://github.com/xMdb/struct#features"
+				github="https://github.com/faisal-fida/struct"
+				url=""
 			/>
 			<Project
 				id={3}
@@ -46,8 +46,8 @@ export const Work = () => {
 				description="A digital media assessment focused around huge doughnuts, made using plain HTML/CSS/JS in August 2020."
 				imagePath="/projects/lildonut.png"
 				tech={['HTML', 'CSS', 'JavaScript']}
-				github="https://github.com/xMdb/lildonut"
-				url="https://lildonut.netlify.app"
+				github="https://github.com/faisal-fida/lildonut"
+				url=""
 				inverse={true}
 			/>
 		</Box>

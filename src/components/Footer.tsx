@@ -7,7 +7,7 @@ export const Footer = () => {
 				<Link
 					fontSize={{ base: 'sm', md: 'sm', lg: 'md' }}
 					fontFamily="heading"
-					href="https://github.com/bchiang7/v4"
+					href="https://github.com/bchiang7/"
 					isExternal
 					color="gray.200"
 					_hover={{
@@ -20,9 +20,7 @@ export const Footer = () => {
 						color: 'teal.100',
 						transition: 'all 0.3s ease-in-out',
 					}}>
-					Design inspired by Brittany Chiang
-					<br />
-					on GitHub
+					Inspired by Brittany
 				</Link>
 			</Flex>
 		</Box>

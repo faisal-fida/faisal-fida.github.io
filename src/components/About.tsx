@@ -45,7 +45,7 @@ export const About = () => {
 					{/* TODO: make square and blue */}
 					<Flex fontFamily="heading">
 						<UnorderedList mx={[50, 75, 100]}>
-							<ListItem>JavaScript</ListItem>
+							<ListItem>Python</ListItem>
 							<ListItem>Ansible</ListItem>
 							<ListItem>Node.js</ListItem>
 						</UnorderedList>
