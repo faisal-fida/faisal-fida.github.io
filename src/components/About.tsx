@@ -24,7 +24,7 @@ export const About = () => {
 						Hey! My name is Faisal and I'm 18. I enjoy tinkering with technology. I've been an avid
 						computer user for quite some time now and I am still learning new things everyday. I started my
 						internet journey back in 2014 by creating{' '}
-						<Link href="https://youtube.com/xMdbMatt" color="teal.100" isExternal>
+						<Link href="https://youtube.com/xMdbfaisal" color="teal.100" isExternal>
 							YouTube videos
 						</Link>{' '}
 						and playing games like Minecraft.

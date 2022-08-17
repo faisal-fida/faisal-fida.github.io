@@ -24,8 +24,8 @@ export const Contact = () => {
 					_focus={{
 						textDecoration: 'none',
 					}}
-					href="mailto:matt@xmdb.dev">
-					matt@xmdb.dev
+					href="mailto:employ.faisal@gmail.com">
+					employ@faisal.dev
 				</Link>
 			</Flex>
 		</Box>

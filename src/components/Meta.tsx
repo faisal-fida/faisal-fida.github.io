@@ -38,8 +38,8 @@ export const Meta = () => {
 					site_name: config.defaultTitle,
 				}}
 				twitter={{
-					handle: '@xMdbMatt',
-					site: '@xMdbMatt',
+					handle: '@xMdbfaisal',
+					site: '@xMdbfaisal',
 					cardType: 'summary_large_image',
 				}}
 			/>
