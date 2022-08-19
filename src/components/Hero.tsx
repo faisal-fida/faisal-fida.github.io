@@ -20,7 +20,7 @@ export const Hero = () => {
 						pb={5}
 						ml={10}
 						className="fade delay6">
-						Hi 👋, my name is
+						Hi 👋, my name is Faisal Fida.
 					</Text>
 					<Box
 						borderLeft={1}
@@ -33,9 +33,9 @@ export const Hero = () => {
 							fontWeight="black"
 							lineHeight="125%"
 							mx={5}>
-							Faisal Fida.
+							Tired of working with agencies?
 							<br />
-							<chakra.span color="gray.100">Tired of working with agencies?</chakra.span>
+							<chakra.span color="gray.100">Hire Me!</chakra.span>
 						</Text>
 					</Box>
 					<Text
@@ -44,7 +44,7 @@ export const Hero = () => {
 						my={['25px', '30px', '45px']}
 						maxWidth={['sm', 'md', 'lg']}
 						className="fade delay8">
-						Young, dynamic, and innovative, I provide quality service and lightning fast delivery at an affordable price. The projects I create are innovative and creative, utilizing all facets of technology.
+						Providing quality service and lightning fast delivery at an affordable price. The projects I create are innovative and creative, utilizing all facets of technology.
 					</Text>
 					<NextLink href="#contact" passHref>
 						<Button
