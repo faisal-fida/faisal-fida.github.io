@@ -41,20 +41,16 @@ export const About = () => {
 							<ListItem>Plotly</ListItem>
 							<ListItem>Tensorflow</ListItem>
 							<ListItem>Scikit-Learn</ListItem>
-						</UnorderedList>
-						<UnorderedList mx={[50, 75, 100]}>
-							<ListItem>SQL</ListItem>
-							<ListItem>BI Tools</ListItem>
+							<ListItem>Tableau</ListItem>
+							<ListItem>Tableau</ListItem>
 							<ListItem>Tableau</ListItem>
 						</UnorderedList>
 						<UnorderedList mx={[50, 75, 100]}>
 							<ListItem>SQL</ListItem>
 							<ListItem>BI Tools</ListItem>
 							<ListItem>Tableau</ListItem>
-						</UnorderedList>
-						<UnorderedList mx={[50, 75, 100]}>
-							<ListItem>SQL</ListItem>
-							<ListItem>BI Tools</ListItem>
+							<ListItem>Tableau</ListItem>
+							<ListItem>Tableau</ListItem>
 							<ListItem>Tableau</ListItem>
 						</UnorderedList>
 					</Flex>
