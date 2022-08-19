@@ -21,38 +21,29 @@ export const About = () => {
 					</Text>
 					<Text fontSize={{ base: 'smaller', md: 'sm', lg: 'md' }} fontWeight="normal" maxWidth={450} pb={5}>
 						<br />
-						Hey! My name is Faisal and I'm 18. I enjoy tinkering with technology. I've been an avid
-						computer user for quite some time now and I am still learning new things everyday. I started my
-						internet journey back in 2014 by creating{' '}
-						<Link href="https://youtube.com/xMdbfaisal" color="teal.100" isExternal>
-							YouTube videos
-						</Link>{' '}
-						and playing games like Minecraft.
+						🌱 I'm  Data Science and ML Student passionate about AI Tech, I started my journey back in 2019 by learning and growing my skillset in maching learning📈, Deep Learning 🧠, NLP, data structures and algorithms💻.
+
 						<br />
 						<br />
-						Fast-forward to today, and I am now a full-stack developer working on multiple projects, along
-						with some{' '}
-						<NextLink href="#experience" passHref>
-							<Link href="#experience" color="teal.100">
-								other pretty snazzy skills
-							</Link>
-						</NextLink>{' '}
-						under my belt.
+						Fast-forward to today:
+						Transforming data into insights with 1+ year of demonstrated experience in data analytics and machine learning.
+						Identify and translate business requirement with analytical & visualizational skill.
+						Deriving insights and creating a story for business to make million-dollar decisions.
 						<br />
 						<br />
-						Here are a few technologies I've been working with recently:
+						Tools and Technologies:
 					</Text>
 					{/* TODO: make square and blue */}
 					<Flex fontFamily="heading">
 						<UnorderedList mx={[50, 75, 100]}>
-							<ListItem>Python</ListItem>
-							<ListItem>Ansible</ListItem>
-							<ListItem>Node.js</ListItem>
+							<ListItem>Plotly</ListItem>
+							<ListItem>Tensorflow</ListItem>
+							<ListItem>Scikit-Learn</ListItem>
 						</UnorderedList>
 						<UnorderedList mx={[50, 75, 100]}>
-							<ListItem>TypeScript</ListItem>
-							<ListItem>Next.js</ListItem>
-							<ListItem>Docker</ListItem>
+							<ListItem>SQL</ListItem>
+							<ListItem>BI Tools</ListItem>
+							<ListItem>Tableau</ListItem>
 						</UnorderedList>
 					</Flex>
 				</Flex>
