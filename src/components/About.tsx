@@ -25,19 +25,32 @@ export const About = () => {
 						<br />
 						<br />
 						Fast-forward to today:
+						<br />
+						<br />
 						Transforming data into insights with 1+ year of demonstrated experience in data analytics and machine learning.
-						Identify and translate business requirement with analytical & visualizational skill.
+						<br />
+						Identify and translate business requirement with analytical and visualizational skill.
+						<br />
 						Deriving insights and creating a story for business to make million-dollar decisions.
 						<br />
 						<br />
 						Tools and Technologies:
 					</Text>
-					{/* TODO: make square and blue */}
 					<Flex fontFamily="heading">
 						<UnorderedList mx={[50, 75, 100]}>
 							<ListItem>Plotly</ListItem>
 							<ListItem>Tensorflow</ListItem>
 							<ListItem>Scikit-Learn</ListItem>
+						</UnorderedList>
+						<UnorderedList mx={[50, 75, 100]}>
+							<ListItem>SQL</ListItem>
+							<ListItem>BI Tools</ListItem>
+							<ListItem>Tableau</ListItem>
+						</UnorderedList>
+						<UnorderedList mx={[50, 75, 100]}>
+							<ListItem>SQL</ListItem>
+							<ListItem>BI Tools</ListItem>
+							<ListItem>Tableau</ListItem>
 						</UnorderedList>
 						<UnorderedList mx={[50, 75, 100]}>
 							<ListItem>SQL</ListItem>

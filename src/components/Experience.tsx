@@ -36,19 +36,13 @@ export const Experience = () => {
 		},
 		{
 			id: 4,
-			icon: <RiAdminLine />,
-			title: 'Project Manager',
-			text: 'Dedicated project manager Receive updates whenever you like.',
-		},
-		{
-			id: 5,
 			icon: <RiTerminalBoxLine />,
 			title: 'DevOps',
 			text: 'I test and deploy applications and custom services to AWS servers by using tools like GitHub and Docker.',
 		},
 		{
-			id: 6,
-			icon: <RiVideoAddLine />,
+			id: 5,
+			icon: <RiAdminLine />,
 			title: 'No contracts or fees',
 			text: 'Our subscriptions are always upgradable or downgradable based on your needs at any time.',
 		},
