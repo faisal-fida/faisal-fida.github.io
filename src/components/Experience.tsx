@@ -14,7 +14,7 @@ export const Experience = () => {
 			id: 0,
 			icon: <RiCustomerService2Line />,
 			title: 'Unlimited Requests',
-			text: "I assist you day-to-day by delivering as many requests & revisions as you'd like without increasing monthly rate.",
+			text: 'I assist you day-to-day by delivering as many requests & revisions as you would like without increasing monthly rate.',
 		},
 		{
 			id: 1,
