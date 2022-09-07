@@ -61,9 +61,9 @@ const components = {
 
 const colors = {
 	gray: {
-		200: '#64ffda',
+		200: '#0a192f',
 		800: '#0a192f',
-		900: '#020c1b',
+		900: '#0a192f',
 	},
 	teal: {
 		100: '#f72a49',
