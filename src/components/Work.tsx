@@ -12,7 +12,7 @@ export const Work = () => {
 					Some Things I've Made
 				</Text>
 			</Flex>
-			<Project
+			{/* <Project
 				id={0}
 				title="Hypixel Guild Chat Bot"
 				description="A simple yet modern Discord bot that allows you to bridge between Hypixel guild chat and Discord chat. Made with Discord.js and Mineflayer."
@@ -49,7 +49,7 @@ export const Work = () => {
 				github="https://github.com/faisal-fida/lildonut"
 				url=""
 				inverse={true}
-			/>
+			/> */}
 		</Box>
 	);
 };

@@ -12,16 +12,11 @@ const Index = () => {
 		<>
 			{/* SEO/OG Info */}
 			<Meta />
-
 			<Nav />
 			<Hero />
-
-			<About />
-
-			<Experience />
-
 			<Work />
-
+			<About />
+			<Experience />
 			<Contact />
 			<Footer />
 		</>

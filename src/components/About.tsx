@@ -20,7 +20,7 @@ export const About = () => {
 					</Text>
 					<Text fontSize={{ base: 'smaller', md: 'sm', lg: 'md' }} fontWeight="normal" maxWidth={450} pb={5}>
 						<br />
-						🌱 I'm  Data Science and ML Student passionate about AI Tech, I started my journey back in 2019 by learning and growing my skillset in maching learning📈, Deep Learning 🧠, NLP, data structures and algorithms💻.
+						🌱 I'm  Data Science and ML Student passionate about AI Tech, I started my journey back in 2019 by learning and growing my skillset in maching learning, Deep Learning, NLP, data structures and algorithms.
 
 						<br />
 						<br />
@@ -40,17 +40,11 @@ export const About = () => {
 						<UnorderedList mx={[50, 75, 100]}>
 							<ListItem>Plotly</ListItem>
 							<ListItem>Tensorflow</ListItem>
-							<ListItem>Scikit-Learn</ListItem>
-							<ListItem>Tableau</ListItem>
-							<ListItem>Tableau</ListItem>
-							<ListItem>Tableau</ListItem>
+							<ListItem>Sk-Learn</ListItem>
 						</UnorderedList>
 						<UnorderedList mx={[50, 75, 100]}>
 							<ListItem>SQL</ListItem>
 							<ListItem>BI Tools</ListItem>
-							<ListItem>Tableau</ListItem>
-							<ListItem>Tableau</ListItem>
-							<ListItem>Tableau</ListItem>
 							<ListItem>Tableau</ListItem>
 						</UnorderedList>
 					</Flex>

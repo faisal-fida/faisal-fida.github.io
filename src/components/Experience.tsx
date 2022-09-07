@@ -54,7 +54,7 @@ export const Experience = () => {
 					<chakra.span color="teal.100" fontFamily="heading">
 						2.{' '}
 					</chakra.span>
-					What I Do
+					What you Get:
 				</Text>
 				<Text fontSize={{ base: 'sm', md: 'md', lg: 'xl' }} fontFamily="heading" color="teal.100" pb={5}>
 					My Skills

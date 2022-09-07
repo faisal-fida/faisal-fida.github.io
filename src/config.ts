@@ -15,7 +15,7 @@ export default {
 		{
 			name: 'Twitter',
 			url: 'https://twitter.com/faisalfida_4',
-			handle: '@fasih4444',
+			handle: '@faisalfida_4',
 		},
 		{
 			name: 'Instagram',
@@ -27,6 +27,6 @@ export default {
 		},
 	],
 	keywords:
-		'developer portfolio, developer, portfolio, Faisal Fida, Faisal Fida, fasih4444 portfolio, developer, Faisal Fida developer, faisal fasih4444 developer, xmbd developer, xmbd, gatsby portfolio, gatsbyjs portfolio, web development, web developer, webdev, Faisal Fida portfolio, built with gatsby, Faisal Fida website, fasih4444 is a dev, mgrif, mgrif xyz, faisal g, faisalhew g, web design, web development designer, faisalhew designer, Faisal Fida designer, figma designer, front end development, back end development, development, reactjs developer, react developer, built with react, react portfolio website, react portfolio, front end developer, back end developer, xmbd faisal, xmbdfaisal, faisaly griffin, faisaly g, fasih4444 dev',
+		'developer portfolio, developer, portfolio, Faisal Fida, Faisal Fida, fasih4444 portfolio, developer, Faisal Fida developer, faisal fasih4444 developer, faisal data science, faisal data scientist, faisal data science portfolio, faisal machine learning portfolio, faisal data science, data science, webdev, Faisal Fida portfolio, built with faisal data science, Faisal Fida website, faisal.is-a.dev, fida, faisal data science fida, faisal , faisal-fida data insights, faisal-fida data analyst, faisal-fida data designer, faisal designer, Faisal Fida designer, data analyst faisal.is-a.dev designer, front end development, back end development, data science development, nlp project developer, data analyst faisal developer, built with react, machine learning portfolio website, data science portfolio, front end developer, faisal-fida back end developer, data faisal, faisal-fida data science, faisal-fida data, faisal-fida g, faisal-fida dev',
 	foundingDate: '2019',
 };
