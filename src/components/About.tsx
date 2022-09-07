@@ -26,12 +26,11 @@ export const About = () => {
 						<br />
 						Fast-forward to today:
 						<br />
+						Transforming data into insights.
 						<br />
-						Transforming data into insights with 1+ year of demonstrated experience in data analytics and machine learning.
+						Identify and translate business requirement.
 						<br />
-						Identify and translate business requirement with analytical and visualizational skill.
-						<br />
-						Deriving insights and creating a story for business to make million-dollar decisions.
+						Deriving insights and creating a story for business.
 						<br />
 						<br />
 						Tools and Technologies:
@@ -52,8 +51,8 @@ export const About = () => {
 				{/* Flex Item 2: Image */}
 				<Flex flexDirection="column" p={30} textAlign="left" justifyContent="center" alignItems="center">
 					<Box
-						border={3}
-						borderRadius={8}
+						border={4}
+						borderRadius={10}
 						borderColor="teal.100"
 						borderStyle="solid"
 						// too hard to make it responsive
@@ -65,7 +64,7 @@ export const About = () => {
 						height={380}
 						p={10}
 						position="absolute"></Box>
-					<Image src="/about.png" alt="Faisal Fida" width={500} height={400} />
+					<Image src="/about.png" alt="Faisal Fida" width={573} height={380} />
 
 				</Flex>
 			</Flex>
