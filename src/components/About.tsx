@@ -52,20 +52,21 @@ export const About = () => {
 				{/* Flex Item 2: Image */}
 				<Flex flexDirection="column" p={30} textAlign="left" justifyContent="center" alignItems="center">
 					<Box
-						border={4}
-						borderRadius={10}
+						border={3}
+						borderRadius={8}
 						borderColor="teal.100"
 						borderStyle="solid"
 						// too hard to make it responsive
 						display={['none', 'none', 'none', 'none', 'block']}
-						zIndex={-1}
+						zIndex={1}
 						ml={50}
 						mt={50}
 						width={523}
 						height={380}
 						p={10}
 						position="absolute"></Box>
-					<Image src="/about.png" alt="Faisal Fida" width={523} height={380} />
+					<Image src="/about.png" alt="Faisal Fida" width={500} height={400} />
+
 				</Flex>
 			</Flex>
 		</Box>
