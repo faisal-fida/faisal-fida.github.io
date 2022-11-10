@@ -20,7 +20,7 @@ export const About = () => {
 					</Text>
 					<Text fontSize={{ base: 'smaller', md: 'sm', lg: 'md' }} fontWeight="normal" maxWidth={450} pb={5}>
 						<br />
-						🌱 I'm  Data Science and ML Student passionate about AI Tech, I started my journey back in 2019 by learning and growing my skillset in maching learning, Deep Learning, NLP, data structures and algorithms.
+						Self-taught Data Scientist and currently Machine Learning Student, I started my journey back in 2019 by learning and growing my skillset in maching learning, deep learning, NLP, data structures and algorithms.
 
 						<br />
 						<br />
@@ -38,13 +38,16 @@ export const About = () => {
 					<Flex fontFamily="heading">
 						<UnorderedList mx={[50, 75, 100]}>
 							<ListItem>Plotly</ListItem>
-							<ListItem>Tensorflow</ListItem>
-							<ListItem>Sk-Learn</ListItem>
+							<ListItem>PyTorch</ListItem>
+							<ListItem>Fast Api</ListItem>
+							<ListItem>Scrapy</ListItem>
+							<ListItem>Flask</ListItem>
 						</UnorderedList>
 						<UnorderedList mx={[50, 75, 100]}>
 							<ListItem>SQL</ListItem>
-							<ListItem>BI Tools</ListItem>
 							<ListItem>Tableau</ListItem>
+							<ListItem>AWS</ListItem>
+							<ListItem>Apache</ListItem>
 						</UnorderedList>
 					</Flex>
 				</Flex>

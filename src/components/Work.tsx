@@ -1,4 +1,4 @@
-import { Text, Flex, Box, chakra } from '@chakra-ui/react';
+import { Text, Flex, Box, chakra, Project } from '@chakra-ui/react';
 
 export const Work = () => {
 	return (
@@ -6,12 +6,12 @@ export const Work = () => {
 			<Flex flexDirection="column" textAlign="center" justifyContent="center" alignItems="center">
 				<Text fontSize={{ base: 'xl', md: '3xl', lg: '4xl' }} mb={-50} fontWeight="semibold">
 					<chakra.span color="teal.100" fontFamily="heading">
-						3.{' '}
+						2.{' '}
 					</chakra.span>
-					Some Things I've Made
+					What I Do:
 				</Text>
 			</Flex>
-			{/* <Project
+			<Project
 				id={0}
 				title="Hypixel Guild Chat Bot"
 				description="A simple yet modern Discord bot that allows you to bridge between Hypixel guild chat and Discord chat. Made with Discord.js and Mineflayer."
@@ -48,7 +48,7 @@ export const Work = () => {
 				github="https://github.com/faisal-fida/lildonut"
 				url=""
 				inverse={true}
-			/> */}
+			/>
 		</Box>
 	);
 };
