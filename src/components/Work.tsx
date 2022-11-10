@@ -1,4 +1,5 @@
-import { Text, Flex, Box, chakra, Project } from '@chakra-ui/react';
+import { Text, Flex, Box, chakra } from '@chakra-ui/react';
+import { Project } from './Project';
 
 export const Work = () => {
 	return (
