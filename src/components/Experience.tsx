@@ -2,9 +2,7 @@ import { Text, Flex, Box, chakra, Container, SimpleGrid, HStack, VStack } from '
 import {
 	RiVideoAddLine,
 	RiTerminalBoxLine,
-	RiAdminLine,
 	RiCodeSSlashLine,
-	RiCustomerService2Line,
 	RiSoundModuleLine,
 } from 'react-icons/ri';
 
