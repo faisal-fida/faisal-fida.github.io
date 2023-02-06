@@ -14,11 +14,11 @@ export const Work = () => {
 			</Flex>
 			<Project
 				id={0}
-				title="Hypixel Guild Chat Bot"
-				description="A simple yet modern Discord bot that allows you to bridge between Hypixel guild chat and Discord chat. Made with Discord.js and Mineflayer."
+				title="PakWheels Data Scraper and Analysis"
+				description="Developed a data scraping system that extracted relevant information from the PakWheels website, including data on used and new cars and bikes. Conducted extensive data analysis to identify trends and patterns in the PakWheels market, and presented the findings. Utilized machine learning techniques to further analyze the data, and provided insights and recommendations to the client on how to optimize their operations and increase their success."
 				imagePath="/projects/hgcb.png"
-				tech={['Python', 'Django', 'Flask']}
-				github="https://github.com/faisal-fida/hypixel-guild-chat-bot"
+				tech={['Python', 'Tableau', 'BeautifulSoup']}
+				github="https://github.com/faisal-fida/pak-wheels-analysis"
 				url=""
 			/>
 			<Project

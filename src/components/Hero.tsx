@@ -35,17 +35,17 @@ export const Hero = () => {
 							mx={5}>
 							Faisal Fida
 							<br />
-							<chakra.span color="gray.100">Senior Data Scientist</chakra.span>
+							<chakra.span color="gray.100">Unleashing insights, driving decisions: A Data Scientist's journey.</chakra.span>
 						</Text>
 					</Box>
-					<Text
+					{/* <Text
 						fontSize={{ base: 'sm', md: 'lg', lg: 'xl' }}
 						ml={10}
 						my={['25px', '30px', '45px']}
 						maxWidth={['sm', 'md', 'lg']}
 						className="fade delay8">
 						Innovative and creative projects, utilizing all facets of technology.
-					</Text>
+					</Text> */}
 					<NextLink href="#contact" passHref>
 						<Button
 							zIndex={1}

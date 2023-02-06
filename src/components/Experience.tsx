@@ -11,26 +11,26 @@ export const Experience = () => {
 		{
 			id: 0,
 			icon: <RiVideoAddLine />,
-			title: 'Lightning fast',
-			text: 'I scope requests to ensure that development is completed as quickly as possible.',
+			title: 'Machine Learning',
+			text: 'I utilize a combination of statistical modeling and real-world experimentation to build and fine-tune predictive models, delivering results that drive business impact.',
 		},
 		{
 			id: 1,
 			icon: <RiSoundModuleLine />,
-			title: 'Tech Crew',
-			text: 'I work with my fellow developers and state-of-the-art technologies to help scale quickly.',
+			title: 'Web Scraping',
+			text: 'I use a combination of cutting-edge technologies, best-in-class data analysis methods, and my experience to extract valuable insights from unstructured web data. My goal is to turn data into actionable information for my clients, enabling them to make informed decisions that drive their businesses forward.',
 		},
 		{
 			id: 2,
 			icon: <RiCodeSSlashLine />,
-			title: 'Top-notch quality',
-			text: 'The code I write is always of the highest quality and well-reviewed.',
+			title: 'Data Analysis',
+			text: 'I approach data analysis with a combination of intuition, creativity, and a deep understanding of statistical techniques. From data exploration to hypothesis testing and model validation, I leverage my expertise in data visualization and programming to turn raw data into actionable insights that drive business impact.',
 		},
 		{
 			id: 3,
 			icon: <RiTerminalBoxLine />,
-			title: 'DevOps',
-			text: 'I test and deploy applications and custom services to AWS servers by using tools like GitHub and Docker.',
+			title: 'Data Visualization',
+			text: 'I excel at transforming complex data into meaningful insights through effective data visualization. Whether it is presenting findings to stakeholders, or exploring trends in real-time, my ability to craft compelling visual narratives ensures the story of the data is always front and center.',
 		},
 	];
 	return (
@@ -40,7 +40,7 @@ export const Experience = () => {
 					<chakra.span color="teal.100" fontFamily="heading">
 						3.{' '}
 					</chakra.span>
-					How I Do:
+					Skills:
 				</Text>
 				<Text fontSize={{ base: 'sm', md: 'md', lg: 'xl' }} fontFamily="heading" color="teal.100" pb={5}>
 

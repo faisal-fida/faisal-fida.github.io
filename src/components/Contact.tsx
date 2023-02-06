@@ -10,9 +10,9 @@ export const Contact = () => {
 					</chakra.span>
 					Get In Touch
 				</Text>
-				<Text fontSize={{ base: 'sm', md: 'sm', lg: 'md' }} fontFamily="heading" color="teal.100" pb={5}>
+				{/* <Text fontSize={{ base: 'sm', md: 'sm', lg: 'md' }} fontFamily="heading" color="teal.100" pb={5}>
 					Come say hello!
-				</Text>
+				</Text> */}
 				<Link
 					className="contactLink"
 					fontSize={{ base: '4xl', md: '6xl', lg: '8xl' }}
@@ -25,7 +25,7 @@ export const Contact = () => {
 						textDecoration: 'none',
 					}}
 					href="mailto:employ.faisal@gmail.com">
-					employ@faisal.dev
+					employ.faisal@gmail.com
 				</Link>
 			</Flex>
 		</Box>

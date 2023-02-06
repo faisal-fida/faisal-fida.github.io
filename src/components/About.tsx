@@ -19,34 +19,28 @@ export const About = () => {
 						About Me
 					</Text>
 					<Text fontSize={{ base: 'smaller', md: 'sm', lg: 'md' }} fontWeight="normal" maxWidth={450} pb={5}>
-						<br />
-						Self-taught Data Scientist and currently Machine Learning Student, I started my journey back in 2019 by learning and growing my skillset in maching learning, deep learning, NLP, data structures and algorithms.
-
-						<br />
-						<br />
-						Fast-forward to today:
-						<br />
-						Transforming data into insights.
-						<br />
-						Identify and translate business requirement.
-						<br />
-						Deriving insights and creating a story for business.
-						<br />
-						<br />
+						As a seasoned Data Scientist with 2 years of experience, I know how to find the gems hidden in big and complex data sets. I turn those insights into smart decisions that make a difference for my clients.<br />
+						I've got the skills to analyze data, use machine learning and scrape the web. No matter if I'm working with clients to uncover trends and opportunities or leading a team to create new solutions, I bring a unique blend of tech know-how and business savvy to every project.<br />
+						I've got a solid grasp of the whole data science process, from gathering data to rolling out models, and that's why I always deliver results that really matter for businesses.<br /><br />
 						Tools and Technologies:
 					</Text>
 					<Flex fontFamily="heading">
 						<UnorderedList mx={[50, 75, 100]}>
+							<ListItem>Python</ListItem>
 							<ListItem>Plotly</ListItem>
+							<ListItem>Scikit-learn</ListItem>
+							<ListItem>Keras</ListItem>
 							<ListItem>PyTorch</ListItem>
 							<ListItem>Fast Api</ListItem>
-							<ListItem>Scrapy</ListItem>
 							<ListItem>Flask</ListItem>
 						</UnorderedList>
 						<UnorderedList mx={[50, 75, 100]}>
+							<ListItem>Scrapy</ListItem>
+							<ListItem>Selenium</ListItem>
+							<ListItem>Git</ListItem>
 							<ListItem>SQL</ListItem>
 							<ListItem>Tableau</ListItem>
-							<ListItem>AWS</ListItem>
+							<ListItem>AWS & Azure</ListItem>
 							<ListItem>Apache</ListItem>
 						</UnorderedList>
 					</Flex>
