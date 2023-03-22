@@ -35,7 +35,7 @@ export const Hero = () => {
 							mx={5}>
 							Faisal Fida
 							<br />
-							<chakra.span color="gray.100">Unleashing insights, driving decisions: A Data Scientist's journey.</chakra.span>
+							<chakra.span color="gray.100">Unleashing insights: A Data Scientist's journey.</chakra.span>
 						</Text>
 					</Box>
 					{/* <Text
