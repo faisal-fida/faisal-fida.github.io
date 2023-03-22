@@ -19,18 +19,18 @@ export const About = () => {
 						About Me
 					</Text>
 					<Text fontSize={{ base: 'smaller', md: 'sm', lg: 'md' }} fontWeight="normal" maxWidth={450} pb={5}>
-						As a seasoned Data Scientist with 2 years of experience, I know how to find the gems hidden in big and complex data sets. I turn those insights into smart decisions that make a difference for my clients.<br />
+						<br/>As a Data Scientist with 2 years of experience, I know how to find the gems hidden in big and complex data sets. I turn those insights into smart decisions that make a difference for my clients.<br/><br/>
 						I've got the skills to analyze data, use machine learning and scrape the web. No matter if I'm working with clients to uncover trends and opportunities or leading a team to create new solutions, I bring a unique blend of tech know-how and business savvy to every project.<br />
-						I've got a solid grasp of the whole data science process, from gathering data to rolling out models, and that's why I always deliver results that really matter for businesses.<br /><br />
+						I've got a solid grasp of the whole data science process, from gathering data to rolling out models, and that's why I always deliver results that really matter for businesses.<br/><br/>
 						Tools and Technologies:
 					</Text>
 					<Flex fontFamily="heading">
 						<UnorderedList mx={[50, 75, 100]}>
 							<ListItem>Python</ListItem>
 							<ListItem>Plotly</ListItem>
-							<ListItem>Scikit-learn</ListItem>
+							<ListItem>Scikit</ListItem>
 							<ListItem>Keras</ListItem>
-							<ListItem>PyTorch</ListItem>
+							<ListItem>Tensorflow</ListItem>
 							<ListItem>Fast Api</ListItem>
 							<ListItem>Flask</ListItem>
 						</UnorderedList>
