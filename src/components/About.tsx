@@ -56,7 +56,7 @@ export const About = () => {
 						height={380}
 						p={10}
 						position="absolute"></Box>
-					<Image src="/about.png" alt="Faisal Fida" width={573} height={380} />
+					<Image src="https://xmdb.dev/about.png" alt="Faisal Fida" width={573} height={380} />
 
 				</Flex>
 			</Flex>
