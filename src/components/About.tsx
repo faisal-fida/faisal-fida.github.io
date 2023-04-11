@@ -19,29 +19,23 @@ export const About = () => {
 						About Me
 					</Text>
 					<Text fontSize={{ base: 'smaller', md: 'sm', lg: 'md' }} fontWeight="normal" maxWidth={450} pb={5}>
-						<br/>As a Data Scientist with 2 years of experience, I know how to find the gems hidden in big and complex data sets. I turn those insights into smart decisions that make a difference for my clients.<br/><br/>
-						I've got the skills to analyze data, use machine learning and scrape the web. No matter if I'm working with clients to uncover trends and opportunities or leading a team to create new solutions, I bring a unique blend of tech know-how and business savvy to every project.<br />
-						I've got a solid grasp of the whole data science process, from gathering data to rolling out models, and that's why I always deliver results that really matter for businesses.<br/><br/>
-						Tools and Technologies:
+						This portfolio showcases my expertise in web scraping, data science, and machine learning. I have worked on a range of projects including lead generation, financial analysis, customer behavior analysis, and fraud detection. <br /><br />
+						My experience in these areas allows me to develop innovative solutions to complex problems, leveraging data and machine learning to drive business value. My strong technical skills, coupled with my ability to work collaboratively with cross-functional teams, make me a valuable asset to any organization looking to leverage data to drive business growth.<br /><br />
+						Here are a few technologies I've been working with recently:
 					</Text>
 					<Flex fontFamily="heading">
 						<UnorderedList mx={[50, 75, 100]}>
-							<ListItem>Python</ListItem>
-							<ListItem>Plotly</ListItem>
-							<ListItem>Scikit</ListItem>
 							<ListItem>Keras</ListItem>
-							<ListItem>Tensorflow</ListItem>
-							<ListItem>Fast Api</ListItem>
+							<ListItem>FastApi</ListItem>
 							<ListItem>Flask</ListItem>
+							<ListItem>SQL & Git</ListItem>
 						</UnorderedList>
 						<UnorderedList mx={[50, 75, 100]}>
 							<ListItem>Scrapy</ListItem>
 							<ListItem>Selenium</ListItem>
-							<ListItem>Git</ListItem>
-							<ListItem>SQL</ListItem>
-							<ListItem>Tableau</ListItem>
+							<ListItem>Docker</ListItem>
 							<ListItem>AWS & Azure</ListItem>
-							<ListItem>Apache</ListItem>
+
 						</UnorderedList>
 					</Flex>
 				</Flex>
