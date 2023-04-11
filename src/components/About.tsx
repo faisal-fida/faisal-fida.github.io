@@ -19,8 +19,9 @@ export const About = () => {
 						About Me
 					</Text>
 					<Text fontSize={{ base: 'smaller', md: 'sm', lg: 'md' }} fontWeight="normal" maxWidth={450} pb={5}>
-						This portfolio showcases my expertise in web scraping, data science, and machine learning. I have worked on a range of projects including lead generation, financial analysis, customer behavior analysis, and fraud detection. <br /><br />
-						My experience in these areas allows me to develop innovative solutions to complex problems, leveraging data and machine learning to drive business value. My strong technical skills, coupled with my ability to work collaboratively with cross-functional teams, make me a valuable asset to any organization looking to leverage data to drive business growth.<br /><br />
+						<br />Hey! I have worked on a range of projects including lead generation, financial analysis, customer behavior analysis, and fraud detection. <br /><br />
+						My experience in these areas allows me to develop innovative solutions to complex problems, leveraging data and machine learning to drive business value.
+						My strong technical skills, coupled with my ability to work collaboratively with cross-functional teams, make me a valuable asset to any organization looking to leverage data to drive business growth.<br /><br />
 						Here are a few technologies I've been working with recently:
 					</Text>
 					<Flex fontFamily="heading">
