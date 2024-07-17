@@ -1,0 +1,136 @@
+.contact.section {
+  padding-bottom: 6.25rem;
+}
+
+.contact__container {
+  grid-template-columns: 4fr 8fr;
+  column-gap: 1.875rem;
+}
+
+.contact__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.contact__form-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.5rem;
+}
+
+.contact__form-div {
+  position: relative;
+  margin-bottom: 1.875rem;
+  height: 3.75rem;
+}
+
+.contact__form-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  box-shadow: var(--shadow);
+  background-color: var(--container-color);
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  border-radius: 1.875rem;
+  padding: 0.625rem 1.875rem;
+  z-index: 1;
+}
+
+.contact__form-area {
+  height: 10.25rem;
+}
+
+.contact__form-area textarea {
+  resize: none;
+}
+
+.contact__form-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 35px;
+}
+
+.contact__form-radio {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.contact__form-radio + .contact__form-label {
+  margin-right: 10px; /* Adjust the margin to control spacing */
+}
+
+.contact__form-radio + .contact__form-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--first-color);
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.contact__form-radio:checked + .contact__form-label::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--first-color);
+}
+
+.contact__form-radio-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start */
+  flex-wrap: wrap;
+  gap: 30px; /* Add a gap between radio buttons */
+}
+
+@media screen and (max-width: 1024px) {
+  .contact__container {
+    grid-template-columns: 300px 360px;
+    justify-content: center;
+    gap: 1.875rem;
+  }
+
+  .contact__form-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact__container {
+    grid-template-columns: 310px;
+    row-gap: 1.875rem;
+  }
+
+  .contact__info {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__form-radio-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
