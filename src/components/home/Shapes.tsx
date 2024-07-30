@@ -1,7 +1,7 @@
 const Shapes = () => {
   return (
     <div className="shapes">
-      <svg
+      {/* <svg
         width="27"
         height="29"
         className="shape s1"
@@ -12,7 +12,7 @@ const Shapes = () => {
           fill="#FFD15C"
           fill-rule="evenodd"
         />
-      </svg>
+      </svg> */}
 
       <svg
         width="26"
@@ -29,7 +29,7 @@ const Shapes = () => {
         />
       </svg>
 
-      <svg
+      {/* <svg
         width="30"
         height="25"
         className="shape s3"
@@ -40,7 +40,7 @@ const Shapes = () => {
           fill="#44D7B6"
           fill-rule="evenodd"
         />
-      </svg>
+      </svg> */}
 
       <svg
         width="15"
@@ -59,7 +59,7 @@ const Shapes = () => {
         />
       </svg>
 
-      <svg
+      {/* <svg
         width="15"
         height="23"
         className="shape s5"
@@ -74,7 +74,7 @@ const Shapes = () => {
           fill="#6C6CE5"
           fill-rule="evenodd"
         />
-      </svg>
+      </svg> */}
 
       <svg
         width="49"
@@ -88,7 +88,7 @@ const Shapes = () => {
         </g>
       </svg>
 
-      <svg
+      {/* <svg
         width="26"
         height="26"
         className="shape s7"
@@ -101,9 +101,9 @@ const Shapes = () => {
           fill="none"
           fill-rule="evenodd"
         />
-      </svg>
+      </svg> */}
 
-      <svg
+      {/* <svg
         width="19"
         height="21"
         className="shape s8"
@@ -118,7 +118,7 @@ const Shapes = () => {
           fill="#6C6CE5"
           fill-rule="evenodd"
         />
-      </svg>
+      </svg> */}
 
       <svg
         width="30"
@@ -133,7 +133,7 @@ const Shapes = () => {
         />
       </svg>
 
-      <svg
+      {/* <svg
         width="47"
         height="29"
         className="shape s10"
@@ -143,9 +143,9 @@ const Shapes = () => {
           <path d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z" />
           <path d="M25.17585 9.32448c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36264-9.0893-.26708-11.74616-4.27525C.16049 11.92447-.27182 6.14628 1.68354.77398l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12692 2.12514 3.20675 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40948 8.48988-8.70672l2.34923.85505z" />
         </g>
-      </svg>
+      </svg> */}
 
-      <svg
+      {/* <svg
         width="33"
         height="20"
         className="shape s11"
@@ -156,7 +156,7 @@ const Shapes = () => {
           fill="#FFD15C"
           fill-rule="evenodd"
         />
-      </svg>
+      </svg> */}
     </div>
   );
 };

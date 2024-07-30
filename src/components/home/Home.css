@@ -24,8 +24,9 @@
 
 .home__socials {
   display: flex;
-  column-gap: 1.75rem;
+  column-gap: 2rem;
   margin: 1.5rem 0;
+  justify-content: center;
 }
 
 .home__social-link {
@@ -40,7 +41,7 @@
 
 .scroll__down {
   position: absolute;
-  bottom: 2.5rem;
+  bottom: 1.5rem;
   left: 0;
   width: 100%;
 }

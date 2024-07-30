@@ -1,15 +1,10 @@
-.about__container {
-  grid-template-columns: 3fr 9fr;
-  column-gap: 1.875rem;
-}
-
 .about__data {
   padding: 1.875rem;
   background-color: var(--container-color);
   box-shadow: var(--shadow);
   border-radius: var(--border-radius);
   grid-template-columns: repeat(1, 1fr);
-  column-gap: 1.875rem;
+  column-gap: 2.875rem;
   align-items: flex-start;
   position: relative;
 }
@@ -27,23 +22,30 @@
 }
 
 .about__description {
-  margin-bottom: 1rem;
+  font-size: 1rem;
   text-align: justify;
+}
+
+.skills__category h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
 }
 
 .about__list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  /* margin-bottom: 1rem; */
 }
 
 .about__list li {
   position: relative;
   padding-left: 20px;
+  margin-bottom: 0.5rem;
 }
 
 .about__list li::before {
-  content: "▹";
+  content: "";
   position: absolute;
   left: 0;
 }
