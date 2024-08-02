@@ -1,31 +1,16 @@
 import "./Services.css";
-import Image1 from "../../assets/service-1.svg";
-import Image2 from "../../assets/service-2.svg";
-import Image3 from "../../assets/service-3.svg";
+import Image1 from "../../assets/others/service-1.svg";
+import Image2 from "../../assets/others/service-2.svg";
+import Image3 from "../../assets/others/service-3.svg";
 
-const data = [
-  {
-    id: 1,
-    image: Image1,
-    title: "Responsive design",
-    description:
-      "Ensuring that the website/mobile app is responsive across all platforms",
-  },
-  {
-    id: 2,
-    image: Image2,
-    title: "Web Development",
-    description:
-      "Ensuring that that a website meets the correct standards, and also ensuring it's well maintained",
-  },
-  {
-    id: 3,
-    image: Image3,
-    title: "Mobile Development",
-    description:
-      "Ensuring that a mobile app meets the correct standards, and also ensuring it's well maintained",
-  },
-];
+import servicesData from "../../../data/servicesData.json";
+
+interface ServiceInterface {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+}
 
 const Services = () => {
   return (
@@ -33,10 +18,22 @@ const Services = () => {
       <h2 className="section__title">Services</h2>
 
       <div className="services__container grid">
-        {data.map(({ id, image, title, description }) => {
+        {servicesData.map((service: ServiceInterface) => {
+          const { id, image, title, description } = service;
           return (
             <div className="services__card" key={id}>
-              <img src={image} alt="" className="services__img" width="80" />
+              <img
+                src={
+                  image === "Image1"
+                    ? Image1
+                    : image === "Image2"
+                    ? Image2
+                    : Image3
+                }
+                alt=""
+                className="services__img"
+                width="80"
+              />
 
               <h3 className="services__title">{title}</h3>
               <p className="services__description">{description}</p>

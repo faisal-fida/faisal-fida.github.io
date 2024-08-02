@@ -3,7 +3,15 @@ import "./Resume.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Button from "./Button";
 
-import WorkExperience from "./WorkExperience";
+import experienceData from "../../../data/experienceData.json";
+
+interface Experience {
+  id: number;
+  title: string;
+  company: string;
+  yearsActive: string;
+  information: string[];
+}
 
 const Resume = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -21,7 +29,7 @@ const Resume = () => {
           selectedTabPanelClassName={"is-active"}
         >
           <TabList className="tab__list">
-            {WorkExperience.map((experience, index) => {
+            {experienceData.map((experience: Experience) => {
               const { id, company } = experience;
               return (
                 <Tab className="tab" key={`company-${id}`}>
@@ -31,8 +39,11 @@ const Resume = () => {
             })}
           </TabList>
 
-          {WorkExperience.map((experience) => {
+          {experienceData.map((experience: Experience) => {
             const { id, company, yearsActive, title, information } = experience;
+            const [isExpanded, setIsExpanded] = useState(false);
+            const toggleReadMore = () => setIsExpanded(!isExpanded);
+
             return (
               <TabPanel className="tab__panel" key={`panel-${id}`}>
                 <h2 className="tab__panel-title">
@@ -40,10 +51,17 @@ const Resume = () => {
                 </h2>
                 <p className="tab__panel-subtitle">{yearsActive}</p>
                 <ul className="tab__panel-list">
-                  {information.map((info, index) => {
-                    return <li key={`info-${index}`}>{info}</li>;
-                  })}
+                  {information
+                    .slice(0, isExpanded ? information.length : 2)
+                    .map((info: string, index: number) => {
+                      return <li key={`info-${index}`}>{info}</li>;
+                    })}
                 </ul>
+                {information.length > 2 && (
+                  <button className="read-more" onClick={toggleReadMore}>
+                    {isExpanded ? "Less" : "More"}
+                  </button>
+                )}
               </TabPanel>
             );
           })}

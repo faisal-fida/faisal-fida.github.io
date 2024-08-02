@@ -1,19 +1,43 @@
 import { useState } from "react";
 import "./Portfolio.css";
 
-import Menu from "./Menu";
 import { RiGithubLine, RiLink } from "react-icons/ri";
-
 import { motion } from "framer-motion";
 
+import projectData from "../../../data/projectData.json";
+
+import Work1 from "../../assets/others/native-jobs.png";
+import Work2 from "../../assets/others/cryptoverse.png";
+import Work3 from "../../assets/others/travel.png";
+import Work4 from "../../assets/others/blog-1.svg";
+
+interface MenuType {
+  id: number;
+  image: string;
+  title: string;
+  category: string[];
+  url: string;
+  repositoryUrl: string;
+  description: string;
+}
+
+const imageMap: { [key: string]: string } = {
+  Work1: Work1,
+  Work2: Work2,
+  Work3: Work3,
+  Work4: Work4,
+};
+
+const typedProjectData: MenuType[] = Object.values(projectData) as MenuType[];
+
 const Portfolio = () => {
-  const [items, setItems] = useState(Menu);
+  const [items, setItems] = useState<MenuType[]>(typedProjectData);
   const [activeFilter, setActiveFilter] = useState(0);
+
   const filterItems = (categoryItem: string) => {
-    const updatedItems = Menu.filter((curElem) => {
+    const updatedItems = typedProjectData.filter((curElem: MenuType) => {
       return curElem.category.includes(categoryItem);
     });
-
     setItems(updatedItems);
   };
 
@@ -29,7 +53,7 @@ const Portfolio = () => {
               : "portfolio__item"
           }
           onClick={() => {
-            setItems(Menu);
+            setItems(typedProjectData);
             setActiveFilter(0);
           }}
         >
@@ -42,11 +66,11 @@ const Portfolio = () => {
               : "portfolio__item"
           }
           onClick={() => {
-            filterItems("Frontend");
+            filterItems("Backend");
             setActiveFilter(1);
           }}
         >
-          Frontend
+          Backend
         </span>
         <span
           className={
@@ -55,11 +79,11 @@ const Portfolio = () => {
               : "portfolio__item"
           }
           onClick={() => {
-            filterItems("Backend");
+            filterItems("Machine Learning");
             setActiveFilter(2);
           }}
         >
-          Backend
+          Machine Learning
         </span>
         <span
           className={
@@ -68,11 +92,11 @@ const Portfolio = () => {
               : "portfolio__item"
           }
           onClick={() => {
-            filterItems("Angular");
+            filterItems("Generative AI");
             setActiveFilter(3);
           }}
         >
-          Angular
+          Generative AI
         </span>
         <span
           className={
@@ -81,17 +105,25 @@ const Portfolio = () => {
               : "portfolio__item"
           }
           onClick={() => {
-            filterItems("React");
+            filterItems("Web Scraping");
             setActiveFilter(4);
           }}
         >
-          React
+          Web Scraping
         </span>
       </div>
 
       <div className="portfolio__container grid">
-        {items.map((elem) => {
-          const { id, image, title, category, url, repositoryUrl } = elem;
+        {items.map((Element: MenuType) => {
+          const {
+            id,
+            image,
+            title,
+            category,
+            url,
+            repositoryUrl,
+            description,
+          } = Element;
 
           return (
             <motion.div
@@ -103,9 +135,12 @@ const Portfolio = () => {
               className="portfolio__card"
               key={id}
             >
-              <div className="portfolio__thumbnail">
+              <div
+                className="portfolio__thumbnail"
+                onClick={() => handleImageClick(Element)}
+              >
                 <img
-                  src={image}
+                  src={imageMap[image] || Work4}
                   alt=""
                   className="portfolio__img"
                   height="267"
@@ -115,6 +150,7 @@ const Portfolio = () => {
 
               <span className="portfolio__category">{category.join(", ")}</span>
               <h3 className="portfolio__title">{title}</h3>
+              <p className="portfolio__description">{description}</p>
               <a
                 href={url}
                 target="_blank"

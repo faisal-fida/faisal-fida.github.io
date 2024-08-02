@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "image": "Work1",
+    "title": "HealthLink",
+    "category": ["Backend", "Machine Learning"],
+    "repositoryUrl": "https://github.com/GregSithole/react-native-jobs",
+    "description": "HealthLink is a mobile application that uses machine learning to predict the likelihood of a user having a certain disease based on their symptoms. The app also allows users to book appointments with doctors and get health tips."
+  },
+  {
+    "id": 2,
+    "image": "Work2",
+    "title": "Cryptoverse",
+    "category": ["Backend", "React"],
+    "url": "https://cryptoverse.gregsithole.com",
+    "repositoryUrl": "https://github.com/GregSithole/crypto-app",
+    "description": "Cryptoverse is a web application that allows users to view the latest cryptocurrency prices, news, and trends. The app also provides users with a portfolio feature to track their cryptocurrency investments."
+  },
+  {
+    "id": 3,
+    "image": "Work3",
+    "title": "Travel Advisor",
+    "category": ["Backend"],
+    "url": "https://travel.gregsithole.com",
+    "repositoryUrl": "https://github.com/GregSithole/travel-advisor"
+  },
+  {
+    "id": 4,
+    "image": "Work4",
+    "title": "Wallhaven CLI",
+    "category": ["Backend"],
+    "url": "https://www.npmjs.com/package/wallhaven-cli",
+    "repositoryUrl": "https://github.com/GregSithole/wallhaven-cli"
+  }
+]

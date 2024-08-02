@@ -14,7 +14,7 @@ const AboutBox = () => {
         </div>
 
         <div>
-          <h3 className="about__title">6</h3>
+          <h3 className="about__title">2.5+</h3>
           <span className="about__subtitle">Years of Experience</span>
         </div>
       </div>
@@ -25,7 +25,7 @@ const AboutBox = () => {
         </div>
 
         <div>
-          <h3 className="about__title">31</h3>
+          <h3 className="about__title">100+</h3>
           <span className="about__subtitle">Github Repositories</span>
         </div>
       </div>
@@ -36,7 +36,7 @@ const AboutBox = () => {
         </div>
 
         <div>
-          <h3 className="about__title">3</h3>
+          <h3 className="about__title">5+</h3>
           <span className="about__subtitle">Launched Projects</span>
         </div>
       </div>

@@ -22,26 +22,41 @@
 }
 
 .about__description {
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: justify;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about__info {
+  text-align: center;
+}
+
+.about__info-skill {
+  margin-bottom: 4rem;
 }
 
 .skills__category h3 {
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   margin-top: 2rem;
+  text-align: center;
 }
 
 .about__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* margin-bottom: 1rem; */
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1rem;
+  column-gap: 10rem;
+  margin-top: 1.875rem;
 }
 
 .about__list li {
   position: relative;
-  padding-left: 20px;
-  margin-bottom: 0.5rem;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  padding-left: 1.5rem;
+  line-height: 1.5;
 }
 
 .about__list li::before {

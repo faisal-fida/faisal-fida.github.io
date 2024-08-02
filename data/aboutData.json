@@ -1,0 +1,167 @@
+{
+  "skills": [
+    {
+      "category": "I have experience building, testing and deploying web applications, APIs, and serverless functions.",
+      "items": [
+        {
+          "name": "Django",
+          "link": "https://www.djangoproject.com/",
+          "logo": "src/assets/logos/django.png",
+          "size": "90%",
+          "margin": "10px 0 0 0"
+        },
+        {
+          "name": "FastAPI",
+          "link": "https://fastapi.tiangolo.com",
+          "logo": "https://cdn-images-1.medium.com/v2/resize:fill:1600:480/gravity:fp:0.5:0.4/1*du7p50wS_fIsaC_lR18qsg.png",
+          "size": "100%",
+          "margin": "10px 0 0 0"
+        },
+        {
+          "name": "Pytest",
+          "link": "https://docs.pytest.org/en/stable/",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Pytest_logo.svg",
+          "size": "70%",
+          "margin": "0 0 0 0"
+        },
+        {
+          "name": "AWS",
+          "link": "https://aws.amazon.com/",
+          "logo": "src/assets/logos/aws.png",
+          "size": "60%",
+          "margin": "12px 0 0 0"
+        },
+        {
+          "name": "Celery",
+          "link": "https://docs.celeryproject.org/en/stable/",
+          "logo": "https://www.fullstackpython.com/img/logos/celery.png",
+          "size": "100%",
+          "margin": "15px 0 0 0"
+        },
+        {
+          "name": "Redis",
+          "link": "https://redis.io/",
+          "logo": "https://miro.medium.com/v2/resize:fit:1200/1*i1d88Q8NNrRv6kjf7Ssw4g.png",
+          "size": "100%",
+          "margin": "15px 0 0 0"
+        },
+        {
+          "name": "Docker",
+          "link": "https://www.docker.com/",
+          "logo": "https://logos-world.net/wp-content/uploads/2021/02/Docker-Logo.png",
+          "size": "100%",
+          "margin": "0 0 0 0"
+        },
+        {
+          "name": "GitHub Actions",
+          "link": "https://github.com/features/actions",
+          "logo": "https://cdn.prod.website-files.com/6203daf47137054c031fa0e6/63306942721a28becf0ded7a_github-actions.svg",
+          "size": "60%",
+          "margin": "0 0 0 0"
+        }
+      ]
+    },
+    {
+      "category": "I have experience building and deploying web scrapers, ETL pipelines and machine learning models.",
+      "items": [
+        {
+          "name": "Pandas",
+          "link": "https://pandas.pydata.org/",
+          "logo": "https://media.licdn.com/dms/image/D4D12AQE6U86EjeXXcQ/article-cover_image-shrink_423_752/0/1657116588165?e=1727913600&v=beta&t=CcU3DVAlo1b-tK7XgcLTZi-C1fz55V6xid7LpAloNSs",
+          "size": "100%",
+          "margin": "0 0 0 0"
+        },
+        {
+          "name": "TensorFlow",
+          "link": "https://www.tensorflow.org/",
+          "logo": "https://gcs.vn/wp-content/uploads/2024/03/tensorflow-la-gi-9-1030x659.webp",
+          "size": "100%",
+          "margin": "15px 0 0 -10px"
+        },
+        {
+          "name": "Plotly",
+          "link": "https://plotly.com/",
+          "logo": "https://getlogovector.com/wp-content/uploads/2020/09/plotly-logo-vector.png",
+          "size": "100%",
+          "margin": "25px 0 0 0"
+        },
+        {
+          "name": "Scikit Learn",
+          "link": "https://scikit-learn.org/",
+          "logo": "src/assets/logos/scikit-learn.png",
+          "size": "100%",
+          "margin": "12px 0 0 -20px"
+        },
+
+        {
+          "name": "TFLite",
+          "link": "https://www.tensorflow.org/lite",
+          "logo": "https://www.tensorflow.org/static/site-assets/images/project-logos/tensorflow-lite-logo-social.png",
+          "size": "100%",
+          "margin": "0 0 0 0"
+        },
+        {
+          "name": "Selenium",
+          "link": "https://www.selenium.dev/",
+          "logo": "https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fznde9s4sx4iysia7doil.png",
+          "size": "100%",
+          "margin": "0 0 0 0"
+        },
+        {
+          "name": "Scrapy",
+          "link": "https://scrapy.org/",
+          "logo": "src/assets/logos/scrapy.png",
+          "size": "100%",
+          "margin": "0 0 0 0"
+        }
+      ]
+    },
+    {
+      "category": "I have experience working with generative AI models, LLMs, RAG pipelines, and deploying them as APIs.",
+      "items": [
+        {
+          "name": "HuggingFace",
+          "link": "https://www.huggingface.co/",
+          "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD4IGtgHBR2fZlWmB7ByDqcMc9LJ2I5dcslQ&s",
+          "size": "100%",
+          "margin": "0 0 0 0"
+        },
+        {
+          "name": "LangChain",
+          "link": "https://langchain.com",
+          "logo": "https://cdn.analyticsvidhya.com/wp-content/uploads/2023/07/langchain3.png",
+          "size": "100%",
+          "margin": "-20px 0 0 0"
+        },
+        {
+          "name": "LlamaIndex",
+          "link": "https://llamaindex.ai/",
+          "logo": "https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/ventures/lillamaindex-wordmark-480x480.svg?id=7865ad0b-0dcb-404c-ae11-ab357dd8354f",
+          "size": "100%",
+          "margin": "-15px 0 0 0"
+        },
+        {
+          "name": "Ollama",
+          "link": "https://ollama.com/library/",
+          "logo": "src/assets/logos/ollama.png",
+          "size": "60%",
+          "margin": "-10x 0 0 -20px"
+        },
+        {
+          "name": "Llama.cpp",
+          "link": "https://github.com/ggerganov/llama.cpp",
+          "logo": "https://user-images.githubusercontent.com/229941/224846830-71002ab8-6c0d-49bc-bfcc-669618bbcdbe.png",
+          "size": "100%",
+          "margin": "0 0 0 0"
+        },
+        {
+          "name": "Streamlit",
+          "link": "https://streamlit.io/gallery",
+          "logo": "https://images.datacamp.com/image/upload/v1640050215/image27_frqkzv.png",
+          "size": "100%",
+          "margin": "-12px 0 0 0"
+        }
+      ]
+    }
+  ]
+}

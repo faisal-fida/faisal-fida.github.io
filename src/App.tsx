@@ -10,6 +10,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Testimonials from "./components/testimonials/Testimonials";
 import Blog from "./components/blog/Blog";
 import Contact from "./components/contact/Contact";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;

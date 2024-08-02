@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "image": "Image2",
+    "title": "Backend Development",
+    "description": "Building the scalable backend of a website or application, ensuring it meets the correct standards"
+  },
+  {
+    "id": 2,
+    "image": "Image3",
+    "title": "Data Science",
+    "description": "Analyzing and interpreting complex data to help companies make better business decisions"
+  },
+  {
+    "id": 3,
+    "image": "Image1",
+    "title": "Generative AI",
+    "description": "Learning how to create AI models that can generate new content, such as images, music, and text"
+  }
+]

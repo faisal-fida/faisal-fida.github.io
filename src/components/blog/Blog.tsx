@@ -1,5 +1,5 @@
 import "./Blog.css";
-import Image1 from "../../assets/blog-1.svg";
+import Image1 from "../../assets/others/blog-1.svg";
 
 const Blog = () => {
   return (
