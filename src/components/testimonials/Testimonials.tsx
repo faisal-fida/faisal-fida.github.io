@@ -51,7 +51,7 @@ const Testimonials = () => {
           return (
             <SwiperSlide className="testimonial__item" key={id}>
               <div className="thumb">
-                <img src={imageMap[image]} alt={title} />
+                <img src={imageMap[image]} alt={title} loading="lazy" />
               </div>
               <h3 className="testimonial__title">{title}</h3>
               <span className="subtitle">{subtitle}</span>

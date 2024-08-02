@@ -10,7 +10,7 @@ const Pricing = () => {
 
       <div className="pricing__container grid">
         <div className="pricing__item">
-          <img src={Image1} alt="" className="pricing__img" />
+          <img src={Image1} alt="" className="pricing__img" loading="lazy" />
           <h3 className="pricing__plan">Basic</h3>
           <p className="pricing__title">
             A Simple option but powerful to manage your business
@@ -26,7 +26,7 @@ const Pricing = () => {
 
         <div className="pricing__item best">
           <span className="badge">Recommended</span>
-          <img src={Image2} alt="" className="pricing__img" />
+          <img src={Image2} alt="" className="pricing__img" loading="lazy" />
           <h3 className="pricing__plan">Premium</h3>
           <p className="pricing__title">
             Unlimited product including app integration and more features
@@ -41,7 +41,7 @@ const Pricing = () => {
         </div>
 
         <div className="pricing__item">
-          <img src={Image3} alt="" className="pricing__img" />
+          <img src={Image3} alt="" className="pricing__img" loading="lazy" />
           <h3 className="pricing__plan">Ultimate</h3>
           <p className="pricing__title">
             A wise option for large companies and individuals

@@ -43,6 +43,7 @@ const Services = () => {
                 alt=""
                 className="services__img"
                 width="80"
+                loading="lazy"
               />
 
               <h3 className="services__title">{title}</h3>

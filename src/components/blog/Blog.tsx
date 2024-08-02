@@ -32,7 +32,12 @@ const Blog = () => {
                 <span className="blog__category">{post.category}</span>
               </a>
               <a href="#">
-                <img src={post.image} alt="" className="blog__img" />
+                <img
+                  src={post.image}
+                  alt=""
+                  className="blog__img"
+                  loading="lazy"
+                />
               </a>
             </div>
             <div className="blog__details">

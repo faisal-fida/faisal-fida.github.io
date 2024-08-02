@@ -51,6 +51,7 @@ const About = () => {
                           src={item.logo}
                           alt={item.name}
                           className="skill-logo"
+                          loading="lazy"
                           style={{
                             width: item.size ? item.size : "30px",
                             margin: item.margin ? item.margin : "0",

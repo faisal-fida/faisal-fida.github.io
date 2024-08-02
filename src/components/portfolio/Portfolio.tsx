@@ -143,6 +143,7 @@ const Portfolio = () => {
                   alt=""
                   className="portfolio__img"
                   height="267"
+                  loading="lazy"
                 />
                 <div className="portfolio__mask"></div>
               </div>

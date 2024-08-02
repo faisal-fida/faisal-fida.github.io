@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <section className="home container" id="home">
       <div className="intro">
-        <img src={Me} alt="" className="home__img" width="120" />
+        <img src={Me} alt="" className="home__img" width="120" loading="lazy" />
         <h1 className="home__name">Faisal Fida</h1>
         <span className="home__education">Python Developer</span>
 
