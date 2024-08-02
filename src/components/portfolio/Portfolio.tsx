@@ -1,10 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Portfolio.css";
 
 import { RiGithubLine, RiLink } from "react-icons/ri";
 import { motion } from "framer-motion";
-
-import projectData from "../../../data/projectData.json";
 
 import Work1 from "../../assets/others/native-jobs.png";
 import Work2 from "../../assets/others/cryptoverse.png";
@@ -18,7 +16,7 @@ interface MenuType {
   category: string[];
   url: string;
   repositoryUrl: string;
-  description: string;
+  description: string[];
 }
 
 const imageMap: { [key: string]: string } = {
@@ -28,18 +26,16 @@ const imageMap: { [key: string]: string } = {
   Work4: Work4,
 };
 
-const typedProjectData: MenuType[] = Object.values(projectData) as MenuType[];
-
 const Portfolio = () => {
-  const [items, setItems] = useState<MenuType[]>(typedProjectData);
+  const [items, setItems] = useState<MenuType[]>([]);
   const [activeFilter, setActiveFilter] = useState(0);
 
-  const filterItems = (categoryItem: string) => {
-    const updatedItems = typedProjectData.filter((curElem: MenuType) => {
-      return curElem.category.includes(categoryItem);
-    });
-    setItems(updatedItems);
-  };
+  useEffect(() => {
+    fetch("data/projectData.json")
+      .then((response) => response.json())
+      .then((data) => setItems(data))
+      .catch((error) => console.error("Error fetching project data:", error));
+  }, []);
 
   return (
     <section className="portfolio container section" id="portfolio">
@@ -53,7 +49,7 @@ const Portfolio = () => {
               : "portfolio__item"
           }
           onClick={() => {
-            setItems(typedProjectData);
+            setItems(items);
             setActiveFilter(0);
           }}
         >
@@ -66,7 +62,7 @@ const Portfolio = () => {
               : "portfolio__item"
           }
           onClick={() => {
-            filterItems("Backend");
+            setItems(items.filter((item) => item.category.includes("Backend")));
             setActiveFilter(1);
           }}
         >
@@ -79,7 +75,9 @@ const Portfolio = () => {
               : "portfolio__item"
           }
           onClick={() => {
-            filterItems("Machine Learning");
+            setItems(
+              items.filter((item) => item.category.includes("Machine Learning"))
+            );
             setActiveFilter(2);
           }}
         >
@@ -92,7 +90,9 @@ const Portfolio = () => {
               : "portfolio__item"
           }
           onClick={() => {
-            filterItems("Generative AI");
+            setItems(
+              items.filter((item) => item.category.includes("Generative AI"))
+            );
             setActiveFilter(3);
           }}
         >
@@ -105,7 +105,9 @@ const Portfolio = () => {
               : "portfolio__item"
           }
           onClick={() => {
-            filterItems("Web Scraping");
+            setItems(
+              items.filter((item) => item.category.includes("Web Scraping"))
+            );
             setActiveFilter(4);
           }}
         >
@@ -135,10 +137,7 @@ const Portfolio = () => {
               className="portfolio__card"
               key={id}
             >
-              <div
-                className="portfolio__thumbnail"
-                onClick={() => handleImageClick(Element)}
-              >
+              <div className="portfolio__thumbnail">
                 <img
                   src={imageMap[image] || Work4}
                   alt=""
@@ -150,7 +149,14 @@ const Portfolio = () => {
 
               <span className="portfolio__category">{category.join(", ")}</span>
               <h3 className="portfolio__title">{title}</h3>
-              <p className="portfolio__description">{description}</p>
+              <ul className="portfolio__description">
+                {description.map((desc, index) => (
+                  <li key={index} className="portfolio__data-item">
+                    {desc}
+                  </li>
+                ))}
+              </ul>
+
               <a
                 href={url}
                 target="_blank"
@@ -170,6 +176,19 @@ const Portfolio = () => {
             </motion.div>
           );
         })}
+      </div>
+      <div className="portfolio__view-more">
+        <button className="btn">
+          <a
+            href="https://github.com/faisal-fida"
+            target="_blank"
+            rel="noreferrer"
+            className="portfolio__view-more-link"
+          >
+            {" "}
+            View More{" "}
+          </a>
+        </button>
       </div>
     </section>
   );

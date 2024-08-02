@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "image": "Work1",
+    "title": "HealthLink",
+    "category": ["Backend", "Machine Learning"],
+    "repositoryUrl": "https://github.com/GregSithole/react-native-jobs",
+    "description": [
+      "Track daily health activities and vitals.",
+      "Connect with health professionals for advice.",
+      "Get personalized health recommendations."
+    ]
+  },
+  {
+    "id": 2,
+    "image": "Work2",
+    "title": "Cryptoverse",
+    "category": ["Backend", "React"],
+    "url": "https://cryptoverse.gregsithole.com",
+    "repositoryUrl": "https://github.com/GregSithole/crypto-app",
+    "description": [
+      "View the latest cryptocurrency prices and trends.",
+      "Get detailed information about each cryptocurrency.",
+      "View the latest news articles about cryptocurrencies."
+    ]
+  },
+  {
+    "id": 3,
+    "image": "Work3",
+    "title": "Travel Advisor",
+    "category": ["Backend"],
+    "url": "https://travel.gregsithole.com",
+    "repositoryUrl": "https://github.com/GregSithole/travel-advisor",
+    "description": [
+      "Find the best places to visit in any city.",
+      "Get detailed information about each place.",
+      "View the latest weather information for each city."
+    ]
+  },
+  {
+    "id": 4,
+    "image": "Work4",
+    "title": "Wallhaven CLI",
+    "category": ["Backend"],
+    "url": "https://www.npmjs.com/package/wallhaven-cli",
+    "repositoryUrl": "https://github.com/GregSithole/wallhaven-cli",
+    "description": [
+      "Download wallpapers from Wallhaven using the command line.",
+      "Search for wallpapers by category or keyword.",
+      "Download wallpapers in bulk or individually."
+    ]
+  }
+]

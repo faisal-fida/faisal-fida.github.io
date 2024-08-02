@@ -1,9 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Resume.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Button from "./Button";
-
-import experienceData from "../../../data/experienceData.json";
 
 interface Experience {
   id: number;
@@ -14,7 +12,29 @@ interface Experience {
 }
 
 const Resume = () => {
+  const [experienceData, setExperienceData] = useState<Experience[]>([]);
   const [tabIndex, setTabIndex] = useState(0);
+  const [expandedStates, setExpandedStates] = useState<boolean[]>([]);
+
+  useEffect(() => {
+    fetch("data/experienceData.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setExperienceData(data);
+        setExpandedStates(new Array(data.length).fill(false));
+      })
+      .catch((error) =>
+        console.error("Error fetching experience data:", error)
+      );
+  }, []);
+
+  const toggleReadMore = (index: number) => {
+    setExpandedStates((prevStates) => {
+      const newStates = [...prevStates];
+      newStates[index] = !newStates[index];
+      return newStates;
+    });
+  };
 
   return (
     <section className="resume container section" id="resume">
@@ -39,10 +59,9 @@ const Resume = () => {
             })}
           </TabList>
 
-          {experienceData.map((experience: Experience) => {
+          {experienceData.map((experience: Experience, index: number) => {
             const { id, company, yearsActive, title, information } = experience;
-            const [isExpanded, setIsExpanded] = useState(false);
-            const toggleReadMore = () => setIsExpanded(!isExpanded);
+            const isExpanded = expandedStates[index];
 
             return (
               <TabPanel className="tab__panel" key={`panel-${id}`}>
@@ -58,7 +77,10 @@ const Resume = () => {
                     })}
                 </ul>
                 {information.length > 2 && (
-                  <button className="read-more" onClick={toggleReadMore}>
+                  <button
+                    className="read-more"
+                    onClick={() => toggleReadMore(index)}
+                  >
                     {isExpanded ? "Less" : "More"}
                   </button>
                 )}

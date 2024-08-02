@@ -1,7 +1,7 @@
+import { useEffect, useState } from "react";
 import "./About.css";
 import Resume from "../../assets/others/resume.pdf";
 import AboutBox from "./AboutBox";
-import skillsData from "../../../data/aboutData.json";
 
 interface Skill {
   name: string;
@@ -15,6 +15,17 @@ const About = () => {
   const downloadResume = () => {
     window.open(Resume, "_blank");
   };
+
+  const [skillsData, setSkillsData] = useState<{ skills: any[] }>({
+    skills: [],
+  });
+
+  useEffect(() => {
+    fetch("data/aboutData.json")
+      .then((response) => response.json())
+      .then((data) => setSkillsData(data))
+      .catch((error) => console.error("Error fetching skills data:", error));
+  }, []);
 
   return (
     <section className="about container section" id="about">

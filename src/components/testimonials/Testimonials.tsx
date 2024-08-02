@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "./Testimonials.css";
 import Image3 from "../../assets/others/avatar-3.svg";
 import Image4 from "../../assets/others/avatar-4.svg";
@@ -7,8 +8,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/pagination";
-
-import testimonialsData from "../../../data/testimonialsData.json";
 
 interface TestimonialType {
   id: number;
@@ -24,9 +23,15 @@ const imageMap: { [key: string]: string } = {
 };
 
 const Testimonials = () => {
-  const data: TestimonialType[] = Object.values(
-    testimonialsData
-  ) as TestimonialType[];
+  const [data, setData] = useState<TestimonialType[]>([]);
+  useEffect(() => {
+    fetch("data/testimonialsData.json")
+      .then((response) => response.json())
+      .then((data) => setData(data))
+      .catch((error) =>
+        console.error("Error fetching testimonials data:", error)
+      );
+  }, []);
 
   return (
     <section className="testimonials container section">
@@ -36,7 +41,8 @@ const Testimonials = () => {
         className="testimonial__container grid"
         modules={[Pagination]}
         spaceBetween={30}
-        slidesPerView={1}
+        slidesPerView={1} // Adjusted to 1
+        slidesPerGroup={1} // Adjusted to 1
         loop={true}
         grabCursor={true}
         pagination={{ clickable: true }}

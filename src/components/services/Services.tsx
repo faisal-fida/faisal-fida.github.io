@@ -3,14 +3,24 @@ import Image1 from "../../assets/others/service-1.svg";
 import Image2 from "../../assets/others/service-2.svg";
 import Image3 from "../../assets/others/service-3.svg";
 
-import servicesData from "../../../data/servicesData.json";
-
 interface ServiceInterface {
   id: number;
   image: string;
   title: string;
   description: string;
 }
+import { useEffect, useState } from "react";
+// useState
+const servicesData = () => {
+  const [services, setServices] = useState([]);
+  useEffect(() => {
+    fetch("data/servicesData.json")
+      .then((response) => response.json())
+      .then((data) => setServices(data))
+      .catch((error) => console.error("Error fetching services data:", error));
+  }, []);
+  return services;
+};
 
 const Services = () => {
   return (
@@ -18,7 +28,7 @@ const Services = () => {
       <h2 className="section__title">Services</h2>
 
       <div className="services__container grid">
-        {servicesData.map((service: ServiceInterface) => {
+        {servicesData().map((service: ServiceInterface) => {
           const { id, image, title, description } = service;
           return (
             <div className="services__card" key={id}>
