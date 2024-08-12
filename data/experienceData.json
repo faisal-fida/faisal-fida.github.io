@@ -1,0 +1,70 @@
+[
+  {
+    "id": 7,
+    "title": "Python Developer",
+    "company": "Moveit Tech",
+    "yearsActive": "July 2024 - Present",
+    "information": [
+      "Built a customer segmentation model for a logistics company, increasing marketing ROI by 20%.",
+      "Developed a relocation cost prediction model using machine learning, achieving 90% accuracy in cost estimation.",
+      "Designed interactive customer analytics charts using Plotly, enabling real-time data-driven decision-making.",
+      "Developed a scalable data processing pipeline using Python, Pandas, and NumPy, reducing processing time by 30%."
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Python Developer",
+    "company": "TrueToForm",
+    "yearsActive": "October 2023 - March 2024",
+    "information": [
+      "Led the development of a high-efficiency ETL pipeline, integrating Algolia, Firestore, and GCP, resulting in faster data processing.",
+      "Engineered a web scraper using Scrapy and Selenium, overcoming 5 types of anti-scraping measures, increasing data collection by 200% for an AI startup.",
+      "Optimized product database management, implementing smart updates that reduced manual data entry while maintaining 10,000+ products.",
+      "Automated daily database updates on GCP, ensuring near real-time product availability for customers.",
+      "Utilized Pandas, NumPy, and JSON to streamline data formatting, cutting integration time with Algolia by 50% and improving search relevance."
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Data Scientist",
+    "company": "The Discov",
+    "yearsActive": "February 2023 - August 2023",
+    "information": [
+      "Engineered web scraping solutions that navigate and extract data from 100+ complex university websites, achieving 95% accuracy in data collection for UK expansion project.",
+      "Leveraged multi-tool scraping framework integrating Scrapy, Selenium, and Brightdata to design and implement scalable scraping solutions.",
+      "Optimized data processing pipelines, reducing processing time by 25%, while maintaining data consistency and quality.",
+      "Lead the development of adaptive extraction algorithms for 50+ diverse website structures, overcoming technical challenges and ensuring data completeness.",
+      "Delivered critical data assets under aggressive timelines, contributing to successful UK market entry and 20% growth in The Discov's international user base within 6 months."
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Web Scraping Specialist (Python)",
+    "company": "Upwork",
+    "yearsActive": "July 2019 - May 2023",
+    "information": [
+      "Collaborated on Python finance projects, including fetching financial data from the Yahoo API.",
+      "Trained LSTM models to predict stock prices using historical financial data.",
+      "Generated targeted leads by compiling lists of members from financial membership websites.",
+      "Received consistent 5/5 ratings for skills, quality, availability and proficiency."
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Freelance Software Engineer",
+    "company": "Fiverr",
+    "yearsActive": "November 2017 - May 2023",
+    "information": [
+      "Developed a web application for a client using Django, PostgreSQL.",
+      "Automated data extraction tasks using Python, saving 10 hours per week for a client.",
+      "Created a web scraping tool to collect real-time data from multiple websites, enabling a client to monitor competitor prices and adjust pricing strategies accordingly."
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Features Writer",
+    "company": "Medium",
+    "yearsActive": "January 2019 - July 2022",
+    "information": ["Published articles on data science and machine learning."]
+  }
+]

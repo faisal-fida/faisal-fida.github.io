@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "image": "Image1",
+    "title": "Margaret Tam",
+    "subtitle": "Co-Founder & CTO @ TrueToForm",
+    "comment": "Faisal is fast, effective, and easy to work with. His deliverables were cleanly written code that was well-documented. I would recommend working with him."
+  },
+  {
+    "id": 2,
+    "image": "Image2",
+    "title": "Stefan Koekemoer",
+    "subtitle": "Captain @ M/Y Falcon Lair",
+    "comment": "Simply the best, deep knowledge of Machine Learning, and can help with very complex problems very fast. My Go to Data expert. 👍"
+  },
+  {
+    "id": 3,
+    "image": "Image3",
+    "title": "Arvin Michole Calizo",
+    "subtitle": "Principal Coordinator for Data Privacy @ Capital One",
+    "comment": "Faisal is an outstanding data scraper! Timely, accurate, and efficient. Made our project a breeze. Highly recommended for any data scraping needs."
+  }
+]
