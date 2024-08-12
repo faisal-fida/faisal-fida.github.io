@@ -32,6 +32,7 @@ jobs:
           VITE_EMAILJS_TEMPLATE: ${{ secrets.VITE_EMAILJS_TEMPLATE }}
           VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
 
+      # Ensure the build output path is correct
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
@@ -50,6 +51,9 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
