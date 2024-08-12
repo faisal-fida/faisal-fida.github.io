@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import "./Testimonials.css";
-import Image3 from "../../assets/others/avatar-3.svg";
-import Image4 from "../../assets/others/avatar-4.svg";
+import Image1 from "../../assets/avatars/margaret.svg";
+import Image2 from "../../assets/avatars/stefan.svg";
+import Image3 from "../../assets/avatars/arvin.svg";
 
 import { Pagination } from "swiper/modules"; // Corrected import
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,8 +19,9 @@ interface TestimonialType {
 }
 
 const imageMap: { [key: string]: string } = {
+  Image1: Image1,
+  Image2: Image2,
   Image3: Image3,
-  Image4: Image4,
 };
 
 const Testimonials = () => {

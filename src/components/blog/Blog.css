@@ -1,9 +1,11 @@
 .blog__container {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1.875rem;
 }
 
 .blog__card {
+  position: relative;
   box-shadow: var(--shadow);
   border-radius: var(--border-radius);
   overflow: hidden;
@@ -12,15 +14,6 @@
 .blog__thumb {
   position: relative;
   overflow: hidden;
-}
-
-.blog__img {
-  transform: scale(1);
-  transition: 0.3s;
-}
-
-.blog__thumb:hover .blog__img {
-  transform: scale(1.1);
 }
 
 .blog__category {
@@ -40,12 +33,14 @@
 
 .blog__details {
   background-color: var(--container-color);
-  padding: 1.25rem;
+  padding: 2.25rem;
 }
 
 .blog__title {
-  font-size: var(--h3-font-size);
+  font-size: 1rem;
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  font-weight: var(--font-medium);
 }
 
 .blog__meta {
