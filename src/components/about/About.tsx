@@ -11,12 +11,17 @@ interface Skill {
   margin?: string;
 }
 
+interface SkillCategory {
+  category: string;
+  items: Skill[];
+}
+
 const About = () => {
   const downloadResume = () => {
     window.open(Resume, "_blank");
   };
 
-  const [skillsData, setSkillsData] = useState<{ skills: any[] }>({
+  const [skillsData, setSkillsData] = useState<{ skills: SkillCategory[] }>({
     skills: [],
   });
 
@@ -33,38 +38,35 @@ const About = () => {
 
       <div className="about__data grid">
         <div className="about__info">
-          {skillsData.skills.map(
-            (category: { category: string; items: Skill[] }, index: number) => (
-              <div key={index} className="about__info-skill">
-                <p className="about__description">{category.category}</p>
+          {skillsData.skills.map((category: SkillCategory, index: number) => (
+            <div key={index} className="about__info-skill">
+              <p className="about__description">{category.category}</p>
 
-                <ul className="about__list">
-                  {category.items.map((item, idx) => (
-                    <li key={idx}>
-                      <a
-                        href={item.link}
-                        target="_blank"
-                        rel="noreferrer"
-                        title={item.name}
-                      >
-                        <img
-                          src={item.logo}
-                          alt={item.name}
-                          className="skill-logo"
-                          loading="lazy"
-                          style={{
-                            width: item.size ? item.size : "30px",
-                            margin: item.margin ? item.margin : "0",
-                          }}
-                        />
-                        {/* {item.name} <ExternalLinkIcon /> */}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )
-          )}
+              <ul className="about__list">
+                {category.items.map((item, idx) => (
+                  <li key={idx}>
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      title={item.name}
+                    >
+                      <img
+                        src={item.logo}
+                        alt={item.name}
+                        className="skill-logo"
+                        loading="lazy"
+                        style={{
+                          width: item.size ? item.size : "30px",
+                          margin: item.margin ? item.margin : "0",
+                        }}
+                      />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
 
           <br />
           <button className="btn" onClick={downloadResume}>
