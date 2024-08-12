@@ -32,13 +32,6 @@ jobs:
           VITE_EMAILJS_TEMPLATE: ${{ secrets.VITE_EMAILJS_TEMPLATE }}
           VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
 
-      # Ensure the build output path is correct
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: github-pages
-          path: ./build # Adjust the path to your build output directory
-
   deploy:
     needs: build
     permissions:
@@ -54,11 +47,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          name: github-pages
-          path: ./build # Adjust the path to where you want to download the artifact
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
 
       - name: Deploy to GitHub Pages
         id: deployment
