@@ -45,6 +45,18 @@ const ProjectPrevArrow = ({ onClick }: { onClick: () => void }) => (
   </button>
 );
 
+const ImageNextArrow = ({ onClick }: { onClick: () => void }) => (
+  <button className="portfolio__img-next" onClick={onClick}>
+    <RiArrowRightSLine size={25} />
+  </button>
+);
+
+const ImagePrevArrow = ({ onClick }: { onClick: () => void }) => (
+  <button className="portfolio__img-prev" onClick={onClick}>
+    <RiArrowLeftSLine size={25} />
+  </button>
+);
+
 const Portfolio: React.FC = () => {
   const [items, setItems] = useState<MenuType[]>([]);
   const [filteredItems, setFilteredItems] = useState<MenuType[]>([]);
@@ -53,27 +65,23 @@ const Portfolio: React.FC = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
 
   const settings = {
-    customPaging: function (i: number) {
-      return (
-        <a>
-          <img
-            src={
-              selectedItem && selectedItem.images && selectedItem.images[i]
-                ? imageMap[selectedItem.images[i]]
-                : Work1_1
-            }
-            alt={selectedItem ? selectedItem.title : "Default Title"}
-            className="portfolio__popup-thumbnail"
-          />
-        </a>
-      );
-    },
-    dots: true,
-    dotsClass: "slick-dots slick-thumb",
     infinite: true,
-    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+
+    prevArrow: <ImagePrevArrow onClick={() => {}} />,
+    nextArrow: <ImageNextArrow onClick={() => {}} />,
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   };
 
   useEffect(() => {
@@ -225,38 +233,16 @@ const Portfolio: React.FC = () => {
             </button>
 
             <div className="portfolio__slider">
+              <h2 className="portfolio__popup-title">{selectedItem.title}</h2>
               <Slider {...settings}>
                 {selectedItem.images.map((image, index) => (
                   <div key={index} className="portfolio__popup-slide">
-                    <h2 className="portfolio__popup-title">
-                      {selectedItem.title}
-                    </h2>
                     <img
                       src={imageMap[image] || Work1_1}
                       alt={selectedItem.title}
                       className="portfolio__popup-img"
                     />
                     <div className="portfolio__details-container">
-                      <div className="portfolio__button-container">
-                        <a
-                          href={selectedItem.url}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="portfolio__button"
-                          aria-label="Project Link"
-                        >
-                          <RiLink className="portfolio__button-icon" />
-                        </a>
-                        <a
-                          href={selectedItem.repositoryUrl}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="portfolio__github-button"
-                          aria-label="Repository Link"
-                        >
-                          <RiGithubLine className="portfolio__button-icon" />
-                        </a>
-                      </div>
                       <p className="portfolio__popup-text">
                         {selectedItem.description[index]}
                       </p>
@@ -264,6 +250,27 @@ const Portfolio: React.FC = () => {
                   </div>
                 ))}
               </Slider>
+            </div>
+
+            <div className="portfolio__button-container">
+              <a
+                href={selectedItem.url}
+                target="_blank"
+                rel="noreferrer"
+                className="portfolio__button"
+                aria-label="Project Link"
+              >
+                <RiLink className="portfolio__button-icon" />
+              </a>
+              <a
+                href={selectedItem.repositoryUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="portfolio__github-button"
+                aria-label="Repository Link"
+              >
+                <RiGithubLine className="portfolio__button-icon" />
+              </a>
             </div>
 
             <ProjectPrevArrow onClick={handlePrevProject} />
