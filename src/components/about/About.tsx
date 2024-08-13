@@ -52,7 +52,10 @@ const About = () => {
                       title={item.name}
                     >
                       <img
-                        src={item.logo}
+                        src={
+                          // import.meta.env.VITE_PUBLIC_URL +
+                          "/src/assets/logos/" + item.logo
+                        }
                         alt={item.name}
                         className="skill-logo"
                         loading="lazy"
