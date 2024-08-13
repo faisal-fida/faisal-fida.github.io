@@ -3,27 +3,28 @@
     "id": 1,
     "images": ["1.1", "1.2", "1.3", "1.4"],
     "title": "HealthLink",
-    "category": ["Backend", "Machine Learning"],
-    "repositoryUrl": "https://github.com/GregSithole/react-native-jobs",
+    "category": ["Backend", "Machine Learning", "Generative AI"],
+    "url": "https://healthlink-fyp.github.io/HealthLink/",
+    "repositoryUrl": "https://github.com/HealthLink-Fyp/HealthLink",
     "description": [
-      "description__1_1",
-      "description__1_2",
-      "description__1_3",
-      "description__1_4"
+      "AI-powered telemedicine platform with Patient and doctor dashboards",
+      "Video/Audio calls, Chat, Call transcription & LLM-powered video calls",
+      "Secure appointment scheduling, E-prescriptions & Integrated payment solutions",
+      "Deployed on fly.io & github pages using Docker with CI/CD"
     ]
   },
   {
     "id": 2,
-    "images": ["1.1", "1.2", "1.3", "1.4"],
-    "title": "Cryptoverse",
-    "category": ["Backend", "React"],
-    "url": "https://cryptoverse.gregsithole.com",
-    "repositoryUrl": "https://github.com/GregSithole/crypto-app",
+    "images": ["2.1", "2.2", "2.3", "2.3"],
+    "title": "Ecommerce ETL Pipeline",
+    "category": ["Backend", "Web Scraping", "Data Engineering"],
+    "url": "https://github.com/faisal-fida/Ecommerce-ETL-Pipeline",
+    "repositoryUrl": "https://github.com/faisal-fida/Ecommerce-ETL-Pipeline",
     "description": [
-      "description__2_1",
-      "description__2_2",
-      "description__2_3",
-      "description__2_4"
+      "ETL pipeline on Google Cloud with container orchestration for high availability & scalability",
+      "Google Firestore for scalable, and real-time data storage",
+      "Algolia for indexing and search functionality, enabling fast search results within the mobile app",
+      "Reliable web scraper to continuously extract up-to-date product data."
     ]
   },
   {
