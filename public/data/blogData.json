@@ -1,10 +1,26 @@
 [
   {
     "id": 1,
-    "category": "Example Post",
-    "image": "../../assets/others/blog-1.svg",
-    "title": "Example sss",
-    "date": "09 February, 2022",
-    "author": "Greg"
+    "category": "Machine Learning",
+    "title": "Customer Segmentation and Targeted Marketing",
+    "date": "Jul 8, 2024",
+    "author": "Faisal Fida",
+    "url": "https://medium.com/@faisal-fida/customer-segmentation-and-targeted-marketing-guide-d50658f40853"
+  },
+  {
+    "id": 2,
+    "category": "Natural Language Processing",
+    "title": "The complete list of POS tags in nltk with examples",
+    "date": "Jan 8, 2023",
+    "author": "Faisal Fida",
+    "url": "https://medium.com/@faisal-fida/the-complete-list-of-pos-tags-in-nltk-with-examples-eb0485f04321"
+  },
+  {
+    "id": 3,
+    "category": "Machine Learning",
+    "title": "How Netflix uses machine learning algorithms and Python",
+    "date": "Dec 24, 2022",
+    "author": "Faisal Fida",
+    "url": "https://medium.com/@faisal-fida/how-netflix-uses-machine-learning-algorithms-and-python-simple-implementation-d1420097aa1f"
   }
 ]

@@ -4,10 +4,10 @@ import "./Blog.css";
 interface Post {
   id: number;
   category: string;
-  image: string;
   title: string;
   date: string;
   author: string;
+  url: string;
 }
 
 const Blog = () => {
@@ -27,26 +27,16 @@ const Blog = () => {
       <div className="blog__container grid">
         {posts.map((post: Post) => (
           <div className="blog__card" key={post.id}>
-            <div className="blog__thumb">
-              <a href="#">
-                <span className="blog__category">{post.category}</span>
-              </a>
-              <a href="#">
-                <img
-                  src={post.image}
-                  alt=""
-                  className="blog__img"
-                  loading="lazy"
-                />
-              </a>
-            </div>
+            <span className="blog__category">{post.category}</span>
             <div className="blog__details">
-              <h3 className="blog__title">{post.title}</h3>
-              <div className="blog__meta">
-                <span>{post.date}</span>
-                <span className="blog__dot">.</span>
-                <span>{post.author}</span>
-              </div>
+              <a href={post.url}>
+                <h3 className="blog__title">{post.title}</h3>
+                <div className="blog__meta">
+                  <span>{post.date}</span>
+                  <span className="blog__dot">.</span>
+                  <span>{post.author}</span>
+                </div>
+              </a>
             </div>
           </div>
         ))}

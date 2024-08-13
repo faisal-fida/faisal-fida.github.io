@@ -1,30 +1,23 @@
 [
   {
     "id": 1,
-    "image": "Image4",
-    "title": "Kerren Ortlepp",
-    "subtitle": "Founder @ Entrostat",
-    "comment": "Greg worked at Entrostat as a full-stack developer. He was excellent and had a real eye for design. If there was ever a time where we had a complicated frontend or needed to know what the best CSS approach was for something - Greg was our goto man!"
+    "image": "Image1",
+    "title": "Margaret Tam",
+    "subtitle": "Co-Founder & CTO @ TrueToForm",
+    "comment": "Faisal is fast, effective, and easy to work with. His deliverables were cleanly written code that was well-documented. I would recommend working with him."
   },
   {
     "id": 2,
-    "image": "Image3",
-    "title": "Thapelo Kekana",
-    "subtitle": "Frontend Developer @ FNB",
-    "comment": "I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck! 👍"
+    "image": "Image2",
+    "title": "Stefan Koekemoer",
+    "subtitle": "Captain @ M/Y Falcon Lair",
+    "comment": "Simply the best, deep knowledge of Machine Learning, and can help with very complex problems very fast. My Go to Data expert. 👍"
   },
   {
     "id": 3,
-    "image": "Image2",
-    "title": "Mpho Mokone",
-    "subtitle": "Founder @ Mokone Media",
-    "comment": "I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck! 👍"
-  },
-  {
-    "id": 4,
-    "image": "Image1",
-    "title": "Kerren Ortlepp",
-    "subtitle": "Founder @ Entrostat",
-    "comment": "Greg worked at Entrostat as a full-stack developer. He was excellent and had a real eye for design. If there was ever a time where we had a complicated frontend or needed to know what the best CSS approach was for something"
+    "image": "Image3",
+    "title": "Arvin Michole Calizo",
+    "subtitle": "Principal Coordinator for Data Privacy @ Capital One",
+    "comment": "Faisal is an outstanding data scraper! Timely, accurate, and efficient. Made our project a breeze. Highly recommended for any data scraping needs."
   }
 ]

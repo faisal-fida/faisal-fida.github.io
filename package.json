@@ -12,18 +12,22 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@fortawesome/fontawesome-free": "^6.6.0",
+    "dotenv": "^16.4.5",
     "framer-motion": "^11.3.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
+    "react-slick": "^0.30.2",
     "react-tabs": "^6.0.2",
     "react-toastify": "^10.0.5",
+    "slick-carousel": "^1.8.1",
     "swiper": "^11.1.5"
   },
   "devDependencies": {
     "@types/node": "^20.14.11",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "@types/react-slick": "^0.23.13",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
     "@typescript-eslint/parser": "^7.15.0",
     "@vitejs/plugin-react": "^4.3.1",
