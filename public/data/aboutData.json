@@ -6,56 +6,56 @@
         {
           "name": "Django",
           "link": "https://www.djangoproject.com/",
-          "logo": "django.png",
+          "logo": "django",
           "size": "90%",
           "margin": "10px 0 0 0"
         },
         {
           "name": "FastAPI",
           "link": "https://fastapi.tiangolo.com",
-          "logo": "fastapi.png",
+          "logo": "fastapi",
           "size": "100%",
           "margin": "10px 0 0 0"
         },
         {
           "name": "Pytest",
           "link": "https://docs.pytest.org/en/stable/",
-          "logo": "pytest.svg",
+          "logo": "pytest",
           "size": "70%",
           "margin": "0 0 0 0"
         },
         {
           "name": "AWS",
           "link": "https://aws.amazon.com/",
-          "logo": "aws.png",
+          "logo": "aws",
           "size": "60%",
           "margin": "12px 0 0 0"
         },
         {
           "name": "Celery",
           "link": "https://docs.celeryproject.org/en/stable/",
-          "logo": "celery.png",
+          "logo": "celery",
           "size": "100%",
           "margin": "15px 0 0 0"
         },
         {
           "name": "Redis",
           "link": "https://redis.io/",
-          "logo": "redis.png",
+          "logo": "redis",
           "size": "100%",
           "margin": "15px 0 0 0"
         },
         {
           "name": "Docker",
           "link": "https://www.docker.com/",
-          "logo": "docker.png",
+          "logo": "docker",
           "size": "100%",
           "margin": "0 0 0 0"
         },
         {
           "name": "GitHub Actions",
           "link": "https://github.com/features/actions",
-          "logo": "github_actions.svg",
+          "logo": "github_actions",
           "size": "60%",
           "margin": "0 0 0 0"
         }
@@ -67,28 +67,28 @@
         {
           "name": "Pandas",
           "link": "https://pandas.pydata.org/",
-          "logo": "pandas.png",
+          "logo": "pandas",
           "size": "100%",
           "margin": "0 0 0 0"
         },
         {
           "name": "TensorFlow",
           "link": "https://www.tensorflow.org/",
-          "logo": "tensorflow.webp",
+          "logo": "tensorflow",
           "size": "100%",
           "margin": "15px 0 0 -10px"
         },
         {
           "name": "Plotly",
           "link": "https://plotly.com/",
-          "logo": "plotly.png",
+          "logo": "plotly",
           "size": "100%",
           "margin": "25px 0 0 0"
         },
         {
           "name": "Scikit Learn",
           "link": "https://scikit-learn.org/",
-          "logo": "scikit-learn.png",
+          "logo": "scikit_learn",
           "size": "100%",
           "margin": "12px 0 0 -20px"
         },
@@ -96,21 +96,21 @@
         {
           "name": "TFLite",
           "link": "https://www.tensorflow.org/lite",
-          "logo": "tflite.png",
+          "logo": "tflite",
           "size": "100%",
           "margin": "0 0 0 0"
         },
         {
           "name": "Selenium",
           "link": "https://www.selenium.dev/",
-          "logo": "selenium.png",
+          "logo": "selenium",
           "size": "100%",
           "margin": "0 0 0 0"
         },
         {
           "name": "Scrapy",
           "link": "https://scrapy.org/",
-          "logo": "scrapy.png",
+          "logo": "scrapy",
           "size": "100%",
           "margin": "0 0 0 0"
         }
@@ -122,42 +122,42 @@
         {
           "name": "HuggingFace",
           "link": "https://www.huggingface.co/",
-          "logo": "huggingface.png",
+          "logo": "huggingface",
           "size": "100%",
           "margin": "0 0 0 0"
         },
         {
           "name": "LangChain",
           "link": "https://langchain.com",
-          "logo": "langchain.png",
+          "logo": "langchain",
           "size": "100%",
           "margin": "-20px 0 0 0"
         },
         {
           "name": "LlamaIndex",
           "link": "https://llamaindex.ai/",
-          "logo": "llamaindex.png",
+          "logo": "llamaindex",
           "size": "100%",
           "margin": "0 0 0 0"
         },
         {
           "name": "Ollama",
           "link": "https://ollama.com/library/",
-          "logo": "ollama.png",
+          "logo": "ollama",
           "size": "60%",
           "margin": "-10x 0 0 -20px"
         },
         {
           "name": "Llama.cpp",
           "link": "https://github.com/ggerganov/llama.cpp",
-          "logo": "llama_cpp.png",
+          "logo": "llama_cpp",
           "size": "100%",
           "margin": "0 0 0 0"
         },
         {
           "name": "Streamlit",
           "link": "https://streamlit.io/gallery",
-          "logo": "streamlit.png",
+          "logo": "streamlit",
           "size": "100%",
           "margin": "-12px 0 0 0"
         }

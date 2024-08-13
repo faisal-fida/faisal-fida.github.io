@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./About.css";
 import Resume from "../../assets/others/resume.pdf";
 import AboutBox from "./AboutBox";
+import imageMap from "./Utils";
 
 interface Skill {
   name: string;
@@ -52,10 +53,7 @@ const About = () => {
                       title={item.name}
                     >
                       <img
-                        src={
-                          // import.meta.env.VITE_PUBLIC_URL +
-                          "/src/assets/logos/" + item.logo
-                        }
+                        src={imageMap[item.logo]}
                         alt={item.name}
                         className="skill-logo"
                         loading="lazy"
