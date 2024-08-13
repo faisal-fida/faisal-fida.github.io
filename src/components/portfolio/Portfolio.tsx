@@ -243,11 +243,17 @@ const Portfolio: React.FC = () => {
               <Slider {...settings}>
                 {selectedItem.images.map((image, index) => (
                   <div key={index} className="portfolio__popup-slide">
-                    <img
-                      src={imageMap[image] || Work1_1}
-                      alt={selectedItem.title}
-                      className="portfolio__popup-img"
-                    />
+                    <a
+                      href={imageMap[image] || Work1_1}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={imageMap[image] || Work1_1}
+                        alt={selectedItem.title}
+                        className="portfolio__popup-img"
+                      />
+                    </a>
                     <div className="portfolio__details-container">
                       <p className="portfolio__popup-text">
                         {selectedItem.description[index]}
