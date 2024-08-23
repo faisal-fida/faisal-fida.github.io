@@ -2,7 +2,7 @@
   {
     "id": 1,
     "images": ["1.1", "1.2", "1.3", "1.4"],
-    "title": "HealthLink",
+    "title": "HealthLink - AI Telemedicine Platform",
     "category": ["Backend", "Machine Learning", "Generative AI"],
     "url": "https://healthlink-fyp.github.io/HealthLink/",
     "repositoryUrl": "https://github.com/HealthLink-Fyp/HealthLink",
@@ -11,6 +11,26 @@
       "Video/Audio calls, Chat, Call transcription & LLM-powered video calls",
       "Secure appointment scheduling, E-prescriptions & Integrated payment solutions",
       "Deployed on fly.io & github pages using Docker with CI/CD"
+    ],
+    "techStack": [
+      "Django",
+      "Channels",
+      "DRF",
+      "Angular",
+      "PeerJS",
+      "Tensorflow",
+      "LangChain",
+      "Mixtral",
+      "Presidio",
+      "Postgres",
+      "GPay",
+      "Celery",
+      "Redis",
+      "Gunicorn",
+      "Docker",
+      "Actions",
+      "Pages",
+      "Fly.io"
     ]
   },
   {
@@ -25,6 +45,15 @@
       "Google Firestore for scalable, and real-time data storage",
       "Algolia for indexing and search functionality, enabling fast search results within the mobile app",
       "Reliable web scraper to continuously extract up-to-date product data."
+    ],
+    "techStack": [
+      "Python",
+      "GCP",
+      "Firestore",
+      "Algolia",
+      "Docker",
+      "Redis",
+      "Postgres"
     ]
   },
   {
@@ -35,6 +64,7 @@
     "category": ["Backend"],
     "url": "https://travel.gregsithole.com",
     "repositoryUrl": "https://github.com/GregSithole/travel-advisor",
+    "shortDescription": "Travel Advisor is a travel app that helps you find the best places to visit around the world.",
     "description": [
       "description__3_1",
       "description__3_2",
@@ -50,6 +80,7 @@
     "category": ["Backend"],
     "url": "https://www.npmjs.com/package/wallhaven-cli",
     "repositoryUrl": "https://github.com/GregSithole/wallhaven-cli",
+    "shortDescription": "A CLI tool to download wallpapers from wallhaven.cc",
     "description": [
       "description__4_1",
       "description__4_2",
