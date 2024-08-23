@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./About.css";
-import Resume from "../../assets/others/resume.pdf";
+import Resume from "/assets/others/resume.pdf";
 import AboutBox from "./AboutBox";
 import imageMap from "./Utils";
 

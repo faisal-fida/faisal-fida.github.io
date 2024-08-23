@@ -1,5 +1,5 @@
 import "./Home.css";
-import Me from "../../assets/others/avatar-1.png";
+import Me from "/assets/others/avatar-1.png";
 import HeaderSocials from "./HeaderSocials";
 import ScrollDown from "./ScrollDown";
 import Shapes from "./Shapes";

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "./Testimonials.css";
-import Image1 from "../../assets/avatars/margaret.svg";
-import Image2 from "../../assets/avatars/stefan.svg";
-import Image3 from "../../assets/avatars/arvin.svg";
+import Image1 from "/assets/avatars/margaret.svg";
+import Image2 from "/assets/avatars/stefan.svg";
+import Image3 from "/assets/avatars/arvin.svg";
 
 import { Pagination } from "swiper/modules"; // Corrected import
 import { Swiper, SwiperSlide } from "swiper/react";

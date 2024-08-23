@@ -1,7 +1,7 @@
 import "./Services.css";
-import Image1 from "../../assets/others/service-1.svg";
-import Image2 from "../../assets/others/service-2.svg";
-import Image3 from "../../assets/others/service-3.svg";
+import Image1 from "/assets/others/service-1.svg";
+import Image2 from "/assets/others/service-2.svg";
+import Image3 from "/assets/others/service-3.svg";
 import { useEffect, useState } from "react";
 
 interface ServiceInterface {
