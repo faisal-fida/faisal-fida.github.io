@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import "./About.css";
 import AboutBox from "./AboutBox";
 import imageMap from "./Utils";
-// download and view icons
 import { FaDownload, FaEye } from "react-icons/fa";
 
 interface Skill {
