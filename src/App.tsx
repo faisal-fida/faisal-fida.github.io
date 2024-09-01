@@ -1,7 +1,5 @@
-// import { useState } from "react";
 import "./App.css";
 
-// import Sidebar from "./components/sidebar/Sidebar";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Services from "./components/services/Services";
@@ -12,23 +10,23 @@ import Blog from "./components/blog/Blog";
 import Contact from "./components/contact/Contact";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
+import { FaArrowUp } from "react-icons/fa";
+
 function App() {
-  // const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  // const [theme, setTheme] = useState(defaultDark ? "light" : "light");
-
-  // const switchTheme = () => {
-  //   const newTheme = theme === "light" ? "dark" : "light";
-  //   setTheme(newTheme);
-  // };
-
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    const scrollDuration = 800;
+    const scrollStep = -window.scrollY / (scrollDuration / 15);
+    const scrollInterval = setInterval(() => {
+      if (window.scrollY !== 0) {
+        window.scrollBy(0, scrollStep);
+      } else {
+        clearInterval(scrollInterval);
+      }
+    }, 15);
   };
 
   return (
-    // <div className="app" data-theme={theme}>
     <div className="app">
-      {/* <Sidebar theme={theme} switchTheme={switchTheme} /> */}
       <main className="main">
         <Home />
         <About />
@@ -37,11 +35,10 @@ function App() {
         <Portfolio />
         <Testimonials />
         <Blog />
-        {/* <Contact theme={theme} /> */}
         <Contact />
       </main>
       <button className="scroll-to-top" onClick={scrollToTop}>
-        ↑
+        <FaArrowUp />
       </button>
     </div>
   );

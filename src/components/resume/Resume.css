@@ -119,15 +119,7 @@ button.read-more {
   color: var(--title-color);
 }
 
-[data-theme="dark"] .tab__panel-title {
-  color: #fff;
-}
-
 .tab__panel-subtitle {
   font-size: var(--normal-font-size);
   margin-bottom: 1rem;
-}
-
-[data-theme="dark"] .tab__panel-subtitle {
-  color: #f8f9fa;
 }

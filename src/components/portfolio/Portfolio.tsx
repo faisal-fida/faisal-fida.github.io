@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { MenuType } from "./types";
 import { fetchProjectData } from "./data";
 import Modal from "./Modal";
-import { imageMap } from "./utils";
 
 const Portfolio: React.FC = () => {
   const [items, setItems] = useState<MenuType[]>([]);
@@ -78,7 +77,7 @@ const Portfolio: React.FC = () => {
 
       <div className="portfolio__container grid">
         {filteredItems.map((element, index) => {
-          const { id, images, title } = element;
+          const { id, title } = element;
 
           return (
             <motion.div
@@ -89,21 +88,8 @@ const Portfolio: React.FC = () => {
               transition={{ duration: 0.3 }}
               className="portfolio__card"
               key={id}
+              onClick={() => openPopup(element, index)}
             >
-              <div
-                className="portfolio__thumbnail"
-                onClick={() => openPopup(element, index)}
-              >
-                <img
-                  src={images.length > 0 ? imageMap[images[0]] || "" : ""}
-                  alt={title}
-                  className="portfolio__img1"
-                  height="267"
-                  loading="lazy"
-                />
-                <div className="portfolio__hover-mask"></div>
-              </div>
-
               <div className="portfolio__buttons">
                 <h3 className="portfolio__title1">
                   <button

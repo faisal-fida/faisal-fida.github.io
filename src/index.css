@@ -31,17 +31,6 @@
   --border-radius: 20px;
 }
 
-[data-theme="dark"] {
-  --first-color: hsl(353, 100%, 65%);
-  --title-color: hsl(218, 11%, 69%);
-  --text-color: hsl(0, 0%, 100%);
-  --body-color: hsl(0, 0%, 12.5%);
-  --container-color: hsl(0, 0%, 22%);
-
-  --shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
-  --border-color: rgba(167, 174, 185, 0.1);
-}
-
 /*=============== Responsive Typohraphy ===============*/
 @media screen and (max-width: 1024px) {
   :root {
@@ -138,16 +127,6 @@ img {
 .section__title::before {
   content: "";
   background: url(./assets/dots-bg.svg);
-  height: 2.25rem;
-  width: 2.25rem;
-  position: absolute;
-  left: -0.875rem;
-  top: -0.875rem;
-}
-
-[data-theme="dark"] .section__title::before {
-  content: "";
-  background: url(./assets/dots-bg-dark.svg);
   height: 2.25rem;
   width: 2.25rem;
   position: absolute;
