@@ -10,7 +10,7 @@ export const fetcher = async (url: string) => {
 };
 
 export const localStorageProvider = () => {
-  const map = new Map<string, any>(
+  const map = new Map<string, unknown>(
     JSON.parse(localStorage.getItem("app-cache") || "[]")
   );
 
