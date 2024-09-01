@@ -1,6 +1,6 @@
 import { Cache } from "swr";
 
-type CustomCache = Cache<any>;
+type CustomCache = Cache<unknown>;
 
 export const fetcher = async (url: string) => {
   const cachedData = localStorage.getItem(url);
@@ -14,7 +14,7 @@ export const fetcher = async (url: string) => {
 };
 
 export const localStorageProvider = (): CustomCache => {
-  const map = new Map<string, any>(
+  const map = new Map<string, unknown>(
     JSON.parse(localStorage.getItem("app-cache") || "[]")
   );
 
