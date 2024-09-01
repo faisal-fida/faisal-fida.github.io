@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
 import "./Blog.css";
+import useSWR from "swr";
+import { fetcher } from "../../utils/swrUtils";
 
 interface Post {
   id: number;
@@ -11,14 +12,10 @@ interface Post {
 }
 
 const Blog = () => {
-  const [posts, setPosts] = useState([]);
+  const { data: posts, error } = useSWR("data/blogData.json", fetcher);
 
-  useEffect(() => {
-    fetch("data/blogData.json")
-      .then((response) => response.json())
-      .then((data) => setPosts(data))
-      .catch((error) => console.error("Error fetching blog data:", error));
-  }, []);
+  if (error) return <div>Error loading blog data</div>;
+  if (!posts) return <div>Loading...</div>;
 
   return (
     <section className="blog container section" id="blog">

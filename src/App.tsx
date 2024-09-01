@@ -1,4 +1,6 @@
 import "./App.css";
+import { SWRConfig } from "swr";
+import { localStorageProvider } from "./utils/swrUtils";
 
 import Home from "./components/home/Home";
 import About from "./components/about/About";
@@ -26,21 +28,23 @@ function App() {
   };
 
   return (
-    <div className="app">
-      <main className="main">
-        <Home />
-        <About />
-        <Services />
-        <Resume />
-        <Portfolio />
-        <Testimonials />
-        <Blog />
-        <Contact />
-      </main>
-      <button className="scroll-to-top" onClick={scrollToTop}>
-        <FaArrowUp />
-      </button>
-    </div>
+    <SWRConfig value={{ provider: localStorageProvider }}>
+      <div className="app">
+        <main className="main">
+          <Home />
+          <About />
+          <Services />
+          <Resume />
+          <Portfolio />
+          <Testimonials />
+          <Blog />
+          <Contact />
+        </main>
+        <button className="scroll-to-top" onClick={scrollToTop}>
+          <FaArrowUp />
+        </button>
+      </div>
+    </SWRConfig>
   );
 }
 

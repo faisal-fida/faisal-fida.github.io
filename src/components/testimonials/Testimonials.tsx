@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+import useSWR from "swr";
+import { fetcher } from "../../utils/swrUtils";
+
 import "./Testimonials.css";
 import Image1 from "/assets/avatars/margaret.svg";
 import Image2 from "/assets/avatars/stefan.svg";
@@ -25,15 +27,10 @@ const imageMap: { [key: string]: string } = {
 };
 
 const Testimonials = () => {
-  const [data, setData] = useState<TestimonialType[]>([]);
-  useEffect(() => {
-    fetch("data/testimonialsData.json")
-      .then((response) => response.json())
-      .then((data) => setData(data))
-      .catch((error) =>
-        console.error("Error fetching testimonials data:", error)
-      );
-  }, []);
+  const { data, error } = useSWR("data/testimonialsData.json", fetcher);
+
+  if (error) return <div>Error loading data</div>;
+  if (!data) return <div>Loading...</div>;
 
   return (
     <section className="testimonials container section">
@@ -43,13 +40,14 @@ const Testimonials = () => {
         className="testimonial__container grid"
         modules={[Pagination]}
         spaceBetween={30}
-        slidesPerView={1} // Adjusted to 1
-        slidesPerGroup={1} // Adjusted to 1
+        slidesPerView={1}
+        slidesPerGroup={1}
         loop={true}
         grabCursor={true}
         pagination={{ clickable: true }}
       >
-        {data.map(({ id, image, title, subtitle, comment }) => {
+        {data.map((testimonial: TestimonialType) => {
+          const { id, image, title, subtitle, comment } = testimonial;
           return (
             <SwiperSlide className="testimonial__item" key={id}>
               <div className="thumb">
