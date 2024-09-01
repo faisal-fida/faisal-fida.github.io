@@ -1,9 +1,26 @@
-.main {
-  margin-left: 110px;
-}
-
 @media screen and (max-width: 1024px) {
   .main {
     margin-left: 0;
   }
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-to-top:hover {
+  background-color: #555;
 }

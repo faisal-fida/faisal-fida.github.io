@@ -8,8 +8,8 @@
   {
     "id": 2,
     "image": "Image3",
-    "title": "Data Science",
-    "description": "Analyzing and interpreting complex data to help companies make better business decisions"
+    "title": "Machine Learning",
+    "description": "Developing and deploying machine learning models to solve real-world problems"
   },
   {
     "id": 3,

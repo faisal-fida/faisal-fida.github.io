@@ -1,7 +1,12 @@
 {
+  "resume": {
+    "view_url": "https://drive.google.com/file/d/1yk0bvYUPeE0C11ah3Ym7jcoCEfmk0U2H/view",
+    "download_url": "https://drive.usercontent.google.com/download?id=1yk0bvYUPeE0C11ah3Ym7jcoCEfmk0U2H&export=download"
+  },
+
   "skills": [
     {
-      "category": "I have experience building, testing and deploying web applications, APIs, and serverless functions.",
+      "category": "Web Apps, APIs and Microservices (Engineered, Tested, Deployed)",
       "items": [
         {
           "name": "Django",
@@ -62,7 +67,7 @@
       ]
     },
     {
-      "category": "I have experience building and deploying web scrapers, ETL pipelines and machine learning models.",
+      "category": "Web Scrapers, ETL Pipelines, and Machine Learning Models (Engineered, Deployed, Monitored)",
       "items": [
         {
           "name": "Pandas",
@@ -117,7 +122,7 @@
       ]
     },
     {
-      "category": "I have experience working with generative AI models, LLMs, RAG pipelines, and deploying them as APIs.",
+      "category": "Generative AI Models, LLMs, RAG Pipelines (Engineered, Deployed, Observed)",
       "items": [
         {
           "name": "HuggingFace",

@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import "react-toastify/dist/ReactToastify.css";
 
-const Contact = (props: { theme: string }) => {
+const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
   const [email, setEmail] = useState("");
   const [option, setOption] = useState("");
@@ -150,7 +150,7 @@ const Contact = (props: { theme: string }) => {
             </button>
           </div>
         </form>
-        <ToastContainer position="bottom-right" theme={props.theme} />
+        <ToastContainer position="bottom-right" />
       </div>
     </section>
   );

@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import "./About.css";
-import Resume from "/assets/others/resume.pdf";
 import AboutBox from "./AboutBox";
 import imageMap from "./Utils";
+// download and view icons
+import { FaDownload, FaEye } from "react-icons/fa";
 
 interface Skill {
   name: string;
@@ -17,29 +18,54 @@ interface SkillCategory {
   items: Skill[];
 }
 
-const About = () => {
-  const downloadResume = () => {
-    window.open(Resume, "_blank");
-  };
+interface Resume {
+  view_url: string;
+  download_url: string;
+}
 
-  const [skillsData, setSkillsData] = useState<{ skills: SkillCategory[] }>({
+interface AboutData {
+  resume: Resume;
+  skills: SkillCategory[];
+}
+
+const About = () => {
+  const [aboutData, setAboutData] = useState<AboutData>({
+    resume: {
+      view_url: "",
+      download_url: "",
+    },
     skills: [],
   });
 
   useEffect(() => {
     fetch("data/aboutData.json")
       .then((response) => response.json())
-      .then((data) => setSkillsData(data))
-      .catch((error) => console.error("Error fetching skills data:", error));
+      .then((data) => setAboutData(data))
+      .catch((error) => console.error("Error fetching data:", error));
   }, []);
+
+  const viewResume = () => {
+    if (aboutData.resume.view_url) {
+      window.open(aboutData.resume.view_url, "_blank");
+    } else {
+      console.error("Resume URL not found");
+    }
+  };
+
+  const downloadResume = () => {
+    if (aboutData.resume.download_url) {
+      window.open(aboutData.resume.download_url, "_blank");
+    } else {
+      console.error("Resume URL not found");
+    }
+  };
 
   return (
     <section className="about container section" id="about">
       <h2 className="section__title">Skills</h2>
-
       <div className="about__data grid">
         <div className="about__info">
-          {skillsData.skills.map((category: SkillCategory, index: number) => (
+          {aboutData.skills.map((category: SkillCategory, index: number) => (
             <div key={index} className="about__info-skill">
               <p className="about__description">{category.category}</p>
 
@@ -58,7 +84,9 @@ const About = () => {
                         className="skill-logo"
                         loading="lazy"
                         style={{
-                          width: item.size ? item.size : "30px",
+                          width: item.size
+                            ? `${parseFloat(item.size) / 1.4}px`
+                            : "30px",
                           margin: item.margin ? item.margin : "0",
                         }}
                       />
@@ -69,13 +97,22 @@ const About = () => {
             </div>
           ))}
 
-          <br />
-          <button className="btn" onClick={downloadResume}>
-            Download CV
-          </button>
+          <div className="about__info-download">
+            <button className="btn view_btn" onClick={viewResume}>
+              <FaEye style={{ marginRight: "5px", fontSize: "0.8em" }} />
+              View CV
+            </button>
+            <p className="about__updated">
+              Updated:{" "}
+              {new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toDateString()}
+            </p>
+            <button className="btn download_btn" onClick={downloadResume}>
+              <FaDownload style={{ marginRight: "5px", fontSize: "0.8em" }} />
+              Save CV
+            </button>
+          </div>
         </div>
       </div>
-
       <AboutBox />
     </section>
   );

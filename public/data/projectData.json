@@ -55,37 +55,5 @@
       "Redis",
       "Postgres"
     ]
-  },
-  {
-    "id": 3,
-    "images": ["1.1", "1.2", "1.3", "1.4"],
-
-    "title": "Travel Advisor",
-    "category": ["Backend"],
-    "url": "https://travel.gregsithole.com",
-    "repositoryUrl": "https://github.com/GregSithole/travel-advisor",
-    "shortDescription": "Travel Advisor is a travel app that helps you find the best places to visit around the world.",
-    "description": [
-      "description__3_1",
-      "description__3_2",
-      "description__3_3",
-      "description__3_4"
-    ]
-  },
-  {
-    "id": 4,
-    "images": ["1.1", "1.2", "1.3", "1.4"],
-
-    "title": "Wallhaven CLI",
-    "category": ["Backend"],
-    "url": "https://www.npmjs.com/package/wallhaven-cli",
-    "repositoryUrl": "https://github.com/GregSithole/wallhaven-cli",
-    "shortDescription": "A CLI tool to download wallpapers from wallhaven.cc",
-    "description": [
-      "description__4_1",
-      "description__4_2",
-      "description__4_3",
-      "description__4_4"
-    ]
   }
 ]

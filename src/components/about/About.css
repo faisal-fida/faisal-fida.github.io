@@ -22,10 +22,11 @@
 }
 
 .about__description {
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: justify;
   margin-bottom: 2rem;
   text-align: center;
+  font-weight: 600;
 }
 
 .about__info {
@@ -46,71 +47,13 @@
 .about__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 1rem;
-  column-gap: 10rem;
-  margin-top: 1.875rem;
+  row-gap: 1.25rem;
 }
 
 .about__list li {
   position: relative;
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  padding-left: 1.5rem;
-  line-height: 1.5;
-}
-
-.about__list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-}
-
-.about__skills {
-  row-gap: 1.25rem;
-}
-
-.skills__titles {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
-
-.skills__name {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-}
-
-.skills__number {
-  line-height: 1.2;
-}
-
-.skills__bar,
-.skills__percentage {
-  height: 7px;
-  border-radius: 0.25rem;
-}
-
-.skills__bar {
-  background-color: #f1f1f1;
-}
-
-.skills__percentage {
-  display: block;
-}
-
-.development {
-  width: 90%;
-  background-color: rgb(255, 209, 92);
-}
-
-.ui__design {
-  width: 80%;
-  background-color: rgb(255, 76, 96);
-}
-
-.photography {
-  width: 60%;
-  background-color: rgb(108, 108, 299);
 }
 
 .about__boxes {
@@ -131,6 +74,30 @@
 
 .about__title {
   font-size: 1.875rem;
+}
+
+.about__info-download {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.about__updated {
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.875rem;
+}
+
+.about__info-download .download_btn {
+  margin: 0 0 0 1rem;
+  padding: 0.6rem 1.25rem;
+}
+
+.about__info-download .view_btn {
+  margin: 0 1rem 0 0;
+  padding: 0.6rem 1.25rem;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,7 +1,7 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./App.css";
 
-import Sidebar from "./components/sidebar/Sidebar";
+// import Sidebar from "./components/sidebar/Sidebar";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Services from "./components/services/Services";
@@ -13,17 +13,22 @@ import Contact from "./components/contact/Contact";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
-  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const [theme, setTheme] = useState(defaultDark ? "light" : "light");
+  // const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  // const [theme, setTheme] = useState(defaultDark ? "light" : "light");
 
-  const switchTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
+  // const switchTheme = () => {
+  //   const newTheme = theme === "light" ? "dark" : "light";
+  //   setTheme(newTheme);
+  // };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <div className="app" data-theme={theme}>
-      <Sidebar theme={theme} switchTheme={switchTheme} />
+    // <div className="app" data-theme={theme}>
+    <div className="app">
+      {/* <Sidebar theme={theme} switchTheme={switchTheme} /> */}
       <main className="main">
         <Home />
         <About />
@@ -32,8 +37,12 @@ function App() {
         <Portfolio />
         <Testimonials />
         <Blog />
-        <Contact theme={theme} />
+        {/* <Contact theme={theme} /> */}
+        <Contact />
       </main>
+      <button className="scroll-to-top" onClick={scrollToTop}>
+        ↑
+      </button>
     </div>
   );
 }
