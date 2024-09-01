@@ -6,6 +6,17 @@ import "./Portfolio.css";
 import { MenuType } from "./types";
 import Modal from "./Modal";
 
+import {
+  FaPython,
+  FaAngular,
+  FaDocker,
+  FaGooglePay,
+  FaAlgolia,
+} from "react-icons/fa";
+import { DiDjango, DiRedis } from "react-icons/di";
+import { SiTensorflow, SiLangchain, SiGooglecloud } from "react-icons/si";
+import { BiLogoFirebase, BiLogoPostgresql } from "react-icons/bi";
+
 const Portfolio: React.FC = () => {
   const { data, error } = useSWR("data/projectData.json", fetcher);
   const [items, setItems] = useState<MenuType[]>([]);
@@ -88,23 +99,40 @@ const Portfolio: React.FC = () => {
               key={id}
               onClick={() => openPopup(element, index)}
             >
+              <h3 className="portfolio__title1">{title}</h3>
+
+              <div className="portfolio__icons">
+                {element.techStack.map((tech, index) => {
+                  if (tech === "Tensorflow") {
+                    return <SiTensorflow key={index} title="Tensorflow" />;
+                  } else if (tech === "Django") {
+                    return <DiDjango key={index} title="Django" />;
+                  } else if (tech === "Python") {
+                    return <FaPython key={index} title="Python" />;
+                  } else if (tech === "Angular") {
+                    return <FaAngular key={index} title="Angular" />;
+                  } else if (tech === "Langchain") {
+                    return <SiLangchain key={index} title="Langchain" />;
+                  } else if (tech === "Redis") {
+                    return <DiRedis key={index} title="Redis" />;
+                  } else if (tech === "Docker") {
+                    return <FaDocker key={index} title="Docker" />;
+                  } else if (tech === "GPay") {
+                    return <FaGooglePay key={index} title="Google Pay" />;
+                  } else if (tech === "Postgres") {
+                    return <BiLogoPostgresql key={index} title="Postgres" />;
+                  } else if (tech === "Algolia") {
+                    return <FaAlgolia key={index} title="Algolia" />;
+                  } else if (tech === "GCP") {
+                    return <SiGooglecloud key={index} title="Google Cloud" />;
+                  } else if (tech === "Firebase") {
+                    return <BiLogoFirebase key={index} title="Firebase" />;
+                  }
+                })}
+              </div>
+
               <div className="portfolio__buttons">
-                <h3 className="portfolio__title1">
-                  <button
-                    style={{
-                      color: "black",
-                      border: "none",
-                      background: "none",
-                    }}
-                    onClick={() => openPopup(element, index)}
-                  >
-                    {title}
-                  </button>
-                </h3>
-                <button
-                  className="portfolio__details-button"
-                  onClick={() => openPopup(element, index)}
-                >
+                <button className="portfolio__details-button">
                   View Details
                 </button>
               </div>

@@ -19,7 +19,7 @@
       "Angular",
       "PeerJS",
       "Tensorflow",
-      "LangChain",
+      "Langchain",
       "Mixtral",
       "Presidio",
       "Postgres",
@@ -49,7 +49,7 @@
     "techStack": [
       "Python",
       "GCP",
-      "Firestore",
+      "Firebase",
       "Algolia",
       "Docker",
       "Redis",
