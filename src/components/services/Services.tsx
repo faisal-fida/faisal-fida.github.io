@@ -1,8 +1,10 @@
+import useSWR from "swr";
+import { fetcher } from "../../utils/swrUtils";
+
 import "./Services.css";
 import Image1 from "/assets/others/service-1.svg";
 import Image2 from "/assets/others/service-2.svg";
 import Image3 from "/assets/others/service-3.svg";
-import { useEffect, useState } from "react";
 
 interface ServiceInterface {
   id: number;
@@ -11,27 +13,18 @@ interface ServiceInterface {
   description: string;
 }
 
-// Custom hook to fetch services data
-const useServicesData = () => {
-  const [services, setServices] = useState<ServiceInterface[]>([]);
-  useEffect(() => {
-    fetch("data/servicesData.json")
-      .then((response) => response.json())
-      .then((data) => setServices(data))
-      .catch((error) => console.error("Error fetching services data:", error));
-  }, []);
-  return services;
-};
-
 const Services = () => {
-  const services = useServicesData();
+  const { data, error } = useSWR("data/servicesData.json", fetcher);
+
+  if (error) return <div>Error loading data</div>;
+  if (!data) return <div>Loading...</div>;
 
   return (
     <section className="services container section" id="services">
       <h2 className="section__title">Services</h2>
 
       <div className="services__container grid">
-        {services.map((service: ServiceInterface) => {
+        {data.map((service: ServiceInterface) => {
           const { id, image, title, description } = service;
           return (
             <div className="services__card" key={id}>

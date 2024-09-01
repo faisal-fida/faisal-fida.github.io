@@ -1,9 +1,7 @@
 import { useState, useRef } from "react";
-import { toast, ToastContainer } from "react-toastify";
 import emailjs from "@emailjs/browser";
 
 import "./Contact.css";
-import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -15,7 +13,7 @@ const Contact = () => {
   const submitHandler = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !option) {
-      return toast.error("Please complete the form above");
+      return console.error("Email and option are required");
     }
 
     if (!form.current) {
@@ -36,12 +34,11 @@ const Contact = () => {
       )
       .then(
         () => {
-          toast.success("Email sent successfully");
           if (form.current) form.current.reset();
           setLoading(false);
         },
         (error) => {
-          toast.error("Email not sent due to: " + error.text);
+          console.error("Failed to send email", error);
           setLoading(false);
         }
       );
@@ -150,7 +147,6 @@ const Contact = () => {
             </button>
           </div>
         </form>
-        <ToastContainer position="bottom-right" />
       </div>
     </section>
   );

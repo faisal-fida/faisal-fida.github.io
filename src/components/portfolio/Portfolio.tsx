@@ -1,11 +1,13 @@
+import useSWR from "swr";
+import { fetcher } from "../../utils/swrUtils";
+
 import React, { useState, useEffect } from "react";
 import "./Portfolio.css";
-import { motion } from "framer-motion";
 import { MenuType } from "./types";
-import { fetchProjectData } from "./data";
 import Modal from "./Modal";
 
 const Portfolio: React.FC = () => {
+  const { data, error } = useSWR("data/projectData.json", fetcher);
   const [items, setItems] = useState<MenuType[]>([]);
   const [filteredItems, setFilteredItems] = useState<MenuType[]>([]);
   const [activeFilter, setActiveFilter] = useState<number>(0);
@@ -13,13 +15,14 @@ const Portfolio: React.FC = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
 
   useEffect(() => {
-    fetchProjectData()
-      .then((data) => {
-        setItems(data);
-        setFilteredItems(data);
-      })
-      .catch((error) => console.error("Error fetching project data:", error));
-  }, []);
+    if (data) {
+      setItems(data);
+      setFilteredItems(data);
+    }
+  }, [data]);
+
+  if (error) return <div>Error loading data</div>;
+  if (!data) return <div>Loading...</div>;
 
   const openPopup = (item: MenuType, index: number) => {
     setSelectedItem(item);
@@ -80,12 +83,7 @@ const Portfolio: React.FC = () => {
           const { id, title } = element;
 
           return (
-            <motion.div
-              layout
-              animate={{ opacity: 1 }}
-              initial={{ opacity: 0 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
+            <div
               className="portfolio__card"
               key={id}
               onClick={() => openPopup(element, index)}
@@ -110,7 +108,7 @@ const Portfolio: React.FC = () => {
                   View Details
                 </button>
               </div>
-            </motion.div>
+            </div>
           );
         })}
       </div>

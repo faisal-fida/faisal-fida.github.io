@@ -1,3 +1,6 @@
+import useSWR from "swr";
+import { fetcher } from "../../utils/swrUtils";
+
 import { useEffect, useState } from "react";
 import "./About.css";
 import AboutBox from "./AboutBox";
@@ -37,12 +40,16 @@ const About = () => {
     skills: [],
   });
 
+  const { data, error } = useSWR("data/aboutData.json", fetcher);
+
   useEffect(() => {
-    fetch("data/aboutData.json")
-      .then((response) => response.json())
-      .then((data) => setAboutData(data))
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
+    if (data) {
+      setAboutData(data);
+    }
+  }, [data]);
+
+  if (error) return <div>Error loading data</div>;
+  if (!data) return <div>Loading...</div>;
 
   const viewResume = () => {
     if (aboutData.resume.view_url) {

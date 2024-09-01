@@ -1,4 +1,7 @@
+import useSWR from "swr";
+import { fetcher } from "../../utils/swrUtils";
 import { useEffect, useState } from "react";
+
 import "./Resume.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Button from "./Button";
@@ -12,21 +15,20 @@ interface Experience {
 }
 
 const Resume = () => {
+  const { data, error } = useSWR("data/experienceData.json", fetcher);
   const [experienceData, setExperienceData] = useState<Experience[]>([]);
   const [tabIndex, setTabIndex] = useState(0);
   const [expandedStates, setExpandedStates] = useState<boolean[]>([]);
 
   useEffect(() => {
-    fetch("data/experienceData.json")
-      .then((response) => response.json())
-      .then((data) => {
-        setExperienceData(data);
-        setExpandedStates(new Array(data.length).fill(false));
-      })
-      .catch((error) =>
-        console.error("Error fetching experience data:", error)
-      );
-  }, []);
+    if (data) {
+      setExperienceData(data);
+      setExpandedStates(new Array(data.length).fill(false));
+    }
+  }, [data]);
+
+  if (error) return <div>Error loading data</div>;
+  if (!data) return <div>Loading...</div>;
 
   const toggleReadMore = (index: number) => {
     setExpandedStates((prevStates) => {
