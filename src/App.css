@@ -33,8 +33,4 @@
     font-size: 20px;
     z-index: 10;
   }
-
-  .scroll-to-top.active {
-    right: 30px;
-  }
 }
