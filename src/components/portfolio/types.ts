@@ -5,6 +5,7 @@ export interface MenuType {
   category: string[];
   url: string;
   repositoryUrl: string;
+  youtubeUrl: string;
   description: string[];
   techStack: string[];
 }

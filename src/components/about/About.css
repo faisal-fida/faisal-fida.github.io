@@ -125,15 +125,49 @@
   }
 
   .about__description {
-    font-size: 1.25rem;
+    font-size: 0.9rem;
   }
 
   .about__list {
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 0;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.25rem;
+    row-gap: 1.5rem;
   }
 
   .about__boxes {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__info-download {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.25rem;
+  }
+
+  .about__updated {
+    font-size: 0.6rem;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+  }
+
+  .about__boxes {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.875rem;
+    margin-top: 4.35rem;
+  }
+
+  .about__box {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  .about__icon {
+    font-size: var(--h1-font-size);
+    color: #dedeea;
+  }
+
+  .about__title {
+    font-size: 1.875rem;
   }
 }

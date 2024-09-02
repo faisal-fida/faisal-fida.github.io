@@ -38,44 +38,62 @@ const Modal: React.FC<ModalProps> = ({
         className="portfolio__popup-content"
         onClick={(e) => e.stopPropagation()}
       >
-        <button
-          className="portfolio__popup-close"
-          onClick={closePopup}
-          aria-label="Close"
-        >
-          &times;
-        </button>
-        <h2 className="portfolio__popup-title">{selectedItem.title}</h2>
+        <div className="portfolio__popup-header">
+          <h3 className="portfolio__project-number">
+            {/* Project {selectedItem.id} */}
+            Project {selectedItem.id}
+          </h3>
+          <button
+            className="portfolio__popup-close"
+            onClick={closePopup}
+            aria-label="Close"
+          >
+            &times;
+          </button>
+        </div>
+
+        <div className="portfolio__popup-title">
+          <h2>{selectedItem.title}</h2>
+        </div>
+
         <p className="portfolio__popup-category">
           ({selectedItem.category.join(", ")})
         </p>
         <div className="portfolio__button-container">
-          <a
-            href={selectedItem.url}
-            target="_blank"
-            rel="noreferrer"
-            className="portfolio__button"
-          >
-            <RiLink className="portfolio__button-icon" />
-          </a>
-          <a
-            href={selectedItem.repositoryUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="portfolio__github-button"
-            aria-label="Repository Link"
-          >
-            <RiGithubLine className="portfolio__button-icon" />
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UC2KZ6X8W9l5yM6fD0JyOjDg"
-            target="_blank"
-            rel="noreferrer"
-            className="portfolio__youtube-button"
-            aria-label="Youtube Link"
-          >
-            <RiYoutubeFill className="portfolio__button-icon" />
-          </a>
+          {selectedItem.url && (
+            <a
+              href={selectedItem.url}
+              target="_blank"
+              rel="noreferrer"
+              className="portfolio__button"
+            >
+              <RiLink className="portfolio__button-icon" />
+            </a>
+          )}
+
+          {selectedItem.repositoryUrl && (
+            <a
+              href={selectedItem.repositoryUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="portfolio__github-button"
+              aria-label="Repository Link"
+            >
+              <RiGithubLine className="portfolio__button-icon" />
+            </a>
+          )}
+
+          {selectedItem.youtubeUrl && (
+            <a
+              href="https://www.youtube.com/channel/UC2KZ6X8W9l5yM6fD0JyOjDg"
+              target="_blank"
+              rel="noreferrer"
+              className="portfolio__youtube-button"
+              aria-label="Youtube Link"
+            >
+              <RiYoutubeFill className="portfolio__button-icon" />
+            </a>
+          )}
         </div>
 
         <div className="portfolio__popup-text-container">

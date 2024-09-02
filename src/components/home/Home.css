@@ -213,3 +213,56 @@
     height: 0.2rem;
   }
 }
+
+@media (max-width: 480px) {
+  .home {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .intro {
+    padding: 0.5rem;
+  }
+
+  .home__img {
+    width: 120px;
+    margin-bottom: 0.75rem;
+  }
+
+  .home__name {
+    font-size: calc(var(--h1-font-size) * 1.2);
+    margin-bottom: 0.5rem;
+  }
+
+  .home__education {
+    font-size: calc(var(--small-font-size) * 1.2);
+  }
+
+  .btn {
+    font-size: calc(var(--normal-font-size) * 1.2);
+    padding: 0.5rem 1rem;
+  }
+
+  .home__socials {
+    column-gap: 0.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .home__social-link {
+    font-size: 1.5rem;
+  }
+
+  .scroll__down {
+    bottom: 0.5rem;
+  }
+
+  .mouse {
+    height: 1.2rem;
+    width: 0.9rem;
+  }
+
+  .wheel {
+    width: 0.15rem;
+    height: 0.15rem;
+  }
+}
