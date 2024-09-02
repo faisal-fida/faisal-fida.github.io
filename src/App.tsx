@@ -1,6 +1,8 @@
 import "./App.css";
 import { SWRConfig } from "swr";
 import { localStorageProvider } from "./utils/swrUtils";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 import Home from "./components/home/Home";
 import About from "./components/about/About";
@@ -43,6 +45,8 @@ function App() {
         <button className="scroll-to-top" onClick={scrollToTop}>
           <FaArrowUp />
         </button>
+        <SpeedInsights />
+        <Analytics />
       </div>
     </SWRConfig>
   );
