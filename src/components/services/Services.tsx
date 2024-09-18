@@ -14,7 +14,7 @@ interface ServiceInterface {
 }
 
 const Services = () => {
-  const { data, error } = useSWR("data/servicesData.json", fetcher);
+  const { data, error } = useSWR("data/service.json", fetcher);
 
   if (error) return <div>Error loading data</div>;
   if (!data) return <div>Loading...</div>;

@@ -39,7 +39,7 @@ const About = () => {
     skills: [],
   });
 
-  const { data, error } = useSWR("data/aboutData.json", fetcher);
+  const { data, error } = useSWR("data/about.json", fetcher);
 
   useEffect(() => {
     if (data) {

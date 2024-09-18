@@ -18,7 +18,7 @@ import { SiTensorflow, SiLangchain, SiGooglecloud } from "react-icons/si";
 import { BiLogoFirebase, BiLogoPostgresql } from "react-icons/bi";
 
 const Portfolio: React.FC = () => {
-  const { data, error } = useSWR("data/projectData.json", fetcher);
+  const { data, error } = useSWR("data/project.json", fetcher);
   const [items, setItems] = useState<MenuType[]>([]);
   const [filteredItems, setFilteredItems] = useState<MenuType[]>([]);
   const [activeFilter, setActiveFilter] = useState<number>(0);

@@ -27,7 +27,7 @@ const imageMap: { [key: string]: string } = {
 };
 
 const Testimonials = () => {
-  const { data, error } = useSWR("data/testimonialsData.json", fetcher);
+  const { data, error } = useSWR("data/testimonial.json", fetcher);
 
   if (error) return <div>Error loading data</div>;
   if (!data) return <div>Loading...</div>;

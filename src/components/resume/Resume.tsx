@@ -15,7 +15,7 @@ interface Experience {
 }
 
 const Resume = () => {
-  const { data, error } = useSWR("data/experienceData.json", fetcher);
+  const { data, error } = useSWR("data/experience.json", fetcher);
   const [experienceData, setExperienceData] = useState<Experience[]>([]);
   const [tabIndex, setTabIndex] = useState(0);
   const [expandedStates, setExpandedStates] = useState<boolean[]>([]);

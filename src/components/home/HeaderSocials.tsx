@@ -1,34 +1,34 @@
 import { FaGithub, FaLinkedinIn, FaMedium } from "react-icons/fa";
 
-const HeaderSocials = () => {
+interface Social {
+  name: string;
+  url: string;
+}
+
+interface HeaderSocialsProps {
+  socials: Social[];
+}
+
+const iconMap: { [key: string]: JSX.Element } = {
+  github: <FaGithub />,
+  linkedin: <FaLinkedinIn />,
+  medium: <FaMedium />,
+};
+
+const HeaderSocials: React.FC<HeaderSocialsProps> = ({ socials }) => {
   return (
     <div className="home__socials">
-      <a
-        href="https://github.com/faisal-fida"
-        className="home__social-link"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <FaGithub />
-      </a>
-
-      <a
-        href="https://www.linkedin.com/in/faisal-fida/"
-        className="home__social-link"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <FaLinkedinIn />
-      </a>
-
-      <a
-        href="https://medium.com/@faisal-fida"
-        className="home__social-link"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <FaMedium />
-      </a>
+      {socials.map((social) => (
+        <a
+          key={social.name}
+          href={social.url}
+          className="home__social-link"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {iconMap[social.name.toLowerCase()] || social.name}
+        </a>
+      ))}
     </div>
   );
 };

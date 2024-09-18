@@ -12,7 +12,7 @@ interface Post {
 }
 
 const Blog = () => {
-  const { data: posts, error } = useSWR("data/blogData.json", fetcher);
+  const { data: posts, error } = useSWR("data/blog.json", fetcher);
 
   if (error) return <div>Error loading blog data</div>;
   if (!posts) return <div>Loading...</div>;
