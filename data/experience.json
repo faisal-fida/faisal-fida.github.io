@@ -1,6 +1,6 @@
 [
   {
-    "id": 7,
+    "id": 1,
     "title": "Python Developer",
     "company": "Moveit Tech",
     "yearsActive": "July 2024 - Present",
@@ -12,7 +12,7 @@
     ]
   },
   {
-    "id": 8,
+    "id": 2,
     "title": "Python Developer",
     "company": "TrueToForm",
     "yearsActive": "October 2023 - March 2024",
@@ -25,7 +25,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 3,
     "title": "Data Scientist",
     "company": "The Discov",
     "yearsActive": "February 2023 - August 2023",
@@ -38,7 +38,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 4,
     "title": "Web Scraping Specialist (Python)",
     "company": "Upwork",
     "yearsActive": "July 2019 - May 2023",
@@ -50,7 +50,7 @@
     ]
   },
   {
-    "id": 11,
+    "id": 5,
     "title": "Freelance Software Engineer",
     "company": "Fiverr",
     "yearsActive": "November 2017 - May 2023",
@@ -61,7 +61,7 @@
     ]
   },
   {
-    "id": 12,
+    "id": 6,
     "title": "Features Writer",
     "company": "Medium",
     "yearsActive": "January 2019 - July 2022",
