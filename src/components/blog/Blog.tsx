@@ -1,6 +1,6 @@
 import "./Blog.css";
 import useSWR from "swr";
-import { fetcher } from "../../utils/swrUtils";
+import { portfolioFetcher, useOfflineStatus } from "../../utils/swrUtils";
 
 interface Post {
   id: number;
@@ -12,10 +12,44 @@ interface Post {
 }
 
 const Blog = () => {
-  const { data: posts, error } = useSWR("data/blog.json", fetcher);
+  const isOffline = useOfflineStatus();
+  const { data: posts, error, isLoading, mutate } = useSWR("data/blog.json", portfolioFetcher, {
+    revalidateOnFocus: false,
+    revalidateOnReconnect: true,
+    errorRetryCount: 3,
+    errorRetryInterval: 2000,
+  });
 
-  if (error) return <div>Error loading blog data</div>;
-  if (!posts) return <div>Loading...</div>;
+  // Enhanced error handling
+  if (error) {
+    return (
+      <section className="blog container section" id="blog">
+        <h2 className="section__title">Latest Posts</h2>
+        <div className="error-container">
+          <p>
+            {isOffline
+              ? "You're offline. Please check your internet connection."
+              : `Error loading blog data: ${error.message || 'Unknown error'}`
+            }
+          </p>
+          <button onClick={() => mutate()} disabled={isOffline}>
+            Try Again
+          </button>
+        </div>
+      </section>
+    );
+  }
+
+  if (isLoading || !posts) {
+    return (
+      <section className="blog container section" id="blog">
+        <h2 className="section__title">Latest Posts</h2>
+        <div className="loading-container">
+          <div>Loading blog posts...</div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="blog container section" id="blog">
